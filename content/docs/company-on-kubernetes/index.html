@@ -36,8 +36,8 @@
 <meta property="og:title" content="One-click Deployment at Kubernetes">
 
 
-  <link rel="canonical" href="http://github.com/pages/apache/incubator-servicecomb-website/docs/company-on-kubernetes/">
-  <meta property="og:url" content="http://github.com/pages/apache/incubator-servicecomb-website/docs/company-on-kubernetes/">
+  <link rel="canonical" href="http://localhost:4000/docs/company-on-kubernetes/">
+  <meta property="og:url" content="http://localhost:4000/docs/company-on-kubernetes/">
 
 
 
@@ -48,7 +48,7 @@
   <meta name="twitter:site" content="@ServiceComb">
   <meta name="twitter:title" content="One-click Deployment at Kubernetes">
   <meta name="twitter:description" content="This blog will introduce how to deploy company based on ServiceComb in the kubernetes cluster, and intercom communication of company">
-  <meta name="twitter:url" content="">
+  <meta name="twitter:url" content="http://localhost:4000/docs/company-on-kubernetes/">
 
   
     <meta name="twitter:card" content="summary">
@@ -84,7 +84,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "Apache ServiceComb",
-      "url" : "http://github.com/pages/apache/incubator-servicecomb-website",
+      "url" : "http://localhost:4000",
       "sameAs" : null
     }
   </script>
@@ -99,7 +99,7 @@
 <!-- end SEO -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Apache ServiceComb Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Apache ServiceComb Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -110,7 +110,7 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
-<script src="/assets/vendor/prism/prism.js"></script>
+<script src="http://localhost:4000/assets/vendor/prism/prism.js"></script>
 
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -122,8 +122,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="/assets/vendor/prism/prism.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/vendor/prism/prism.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -146,7 +146,7 @@
 
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 <link href="https://fonts.cat.net/css?family=Roboto:400,500,700|Source+Code+Pro" rel="stylesheet">
-<script src="/assets/js/custom.js"></script>
+<script src="http://localhost:4000/assets/js/custom.js"></script>
 <!-- end custom head snippets -->
 
   </head>
@@ -161,7 +161,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
 	      
-          <a class="site-title active" href="/"><img src="https://www.apache.org/img/servicecomb.png"></a>
+          <a class="site-title active" href="http://localhost:4000/"><img src="https://www.apache.org/img/servicecomb.png"></a>
 	      
         <ul class="visible-links">
           
@@ -170,7 +170,7 @@
               
               
               
-                <a href="/docs/quick-start/">Quick Start</a>
+                <a href="http://localhost:4000/docs/quick-start/">Quick Start</a>
               
             </li>
           
@@ -179,7 +179,7 @@
               
               
               
-                <a href="/users/">Users</a>
+                <a href="http://localhost:4000/users/">Users</a>
               
             </li>
           
@@ -188,7 +188,7 @@
               
               
               
-                <a href="/developers/">Developers</a>
+                <a href="http://localhost:4000/developers/">Developers</a>
               
             </li>
           
@@ -197,7 +197,7 @@
               
               
               
-                <a href="/year-archive/">Blogs</a>
+                <a href="http://localhost:4000/year-archive/">Blogs</a>
               
             </li>
           
@@ -206,7 +206,7 @@
               
               
               
-                <a href="/faqs/">FAQ</a>
+                <a href="http://localhost:4000/faqs/">FAQ</a>
               
             </li>
           
@@ -215,7 +215,7 @@
               
               
               
-                <a href="/release/">Downloads</a>
+                <a href="http://localhost:4000/release/">Downloads</a>
               
             </li>
           
@@ -370,7 +370,7 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>Blog <a href="/docs/linuxcon-workshop-demo/">Linux Con Workshop Demo</a> describes how to use the ServiceComb rapid development company example, the typical enterprise application company example for fast micro-serviced.</p>
+        <p>Blog <a href="http://localhost:4000/docs/linuxcon-workshop-demo/">Linux Con Workshop Demo</a> describes how to use the ServiceComb rapid development company example, the typical enterprise application company example for fast micro-serviced.</p>
 
 <p>Now, <a href="https://github.com/ServiceComb/ServiceComb-Company-WorkShop.git">github</a> already provides a one-click deployment on the kubernetes cluster. This article is going to focus on the corresponding yaml file and service communication, which will be useful for developers develop and deploy micro-serviced application to the cloud based on the Company model.</p>
 
@@ -378,19 +378,18 @@
 
 <p><a href="https://github.com/ServiceComb/ServiceComb-Company-WorkShop/blob/master/kubernetes/README.md">Run Company on Kubernetes Cluster</a> Provides a detailed user guide, company can be deployed in the kubernetes cluster easily thourgh the following three instructions,</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/ServiceComb/ServiceComb-Company-WorkShop.git
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/ServiceComb/ServiceComb-Company-WorkShop.git
 
 <span class="nb">cd </span>ServiceComb-Company-WorkShop/kubernetes/
 
 bash start.sh
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="yaml-file-interpretation">Yaml File Interpretation</h2>
 
 <p>Take the author’s actual environment as an example:</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">root@zenlin:~/src/LinuxCon-Beijing-WorkShop/kubernetes# </span>kubectl get pod -owide
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@zenlin:~/src/LinuxCon-Beijing-WorkShop/kubernetes# kubectl get pod <span class="nt">-owide</span>
 NAME                                      READY     STATUS    RESTARTS   AGE       IP            NODE
 company-beekeeper-3737555734-48sxf        1/1       Running   0          17s       10.244.2.49   zenlinnode2
 company-bulletin-board-4113647782-th91w   1/1       Running   0          17s       10.244.1.53   zenlinnode1
@@ -398,99 +397,93 @@ company-doorman-3391375245-g0p8c          1/1       Running   0          17s    
 company-manager-454733969-0c1g8           1/1       Running   0          16s       10.244.2.50   zenlinnode2
 company-worker-1085546725-x7zl4           1/1       Running   0          17s       10.244.1.54   zenlinnode1
 zipkin-508217170-0khr3                    1/1       Running   0          17s       10.244.2.48   zenlinnode2
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>Total of six pods, company manager, company-doorman, company-bulletin-board, company-worker, company-beekeeper, and zipkin, K8S cluster assigns the corresponding cluster IP to them.</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">root@zenlin:~/src/LinuxCon-Beijing-WorkShop/kubernetes# </span>kubectl get svc -owide
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@zenlin:~/src/LinuxCon-Beijing-WorkShop/kubernetes# kubectl get svc <span class="nt">-owide</span>
 NAME                     CLUSTER-IP      EXTERNAL-IP   PORT<span class="o">(</span>S<span class="o">)</span>          AGE       SELECTOR
 company-bulletin-board   10.99.70.46     &lt;none&gt;        30100/TCP        12m       io.kompose.service<span class="o">=</span>company-bulletin-board
 company-manager          10.100.61.227   &lt;nodes&gt;       8083:30301/TCP   12m       io.kompose.service<span class="o">=</span>company-manager
 zipkin                   10.104.92.198   &lt;none&gt;        9411/TCP         12m       io.kompose.service<span class="o">=</span>zipkin
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Only three services are started, zipkin, bulletin-board, and  company-manager, that is because the address of call chain and the bulletin-board need to be passed in the cluster to be called by other services, and the manager is the api gateway nedd to be visited outside the cluster.</p>
 
 <p>Read company-bulletin-board-service.yaml,</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code>    <span class="s">apiVersion</span><span class="pi">:</span> <span class="s">v1</span>
-    <span class="s">kind</span><span class="pi">:</span> <span class="s">Service</span>
-    <span class="s">metadata</span><span class="pi">:</span>
-      <span class="s">creationTimestamp</span><span class="pi">:</span> <span class="s">null</span>
-      <span class="s">labels</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="na">apiVersion</span><span class="pi">:</span> <span class="s">v1</span>
+    <span class="na">kind</span><span class="pi">:</span> <span class="s">Service</span>
+    <span class="na">metadata</span><span class="pi">:</span>
+      <span class="na">creationTimestamp</span><span class="pi">:</span> <span class="no">null</span>
+      <span class="na">labels</span><span class="pi">:</span>
 <span class="err">    	</span><span class="s">io.kompose.service</span><span class="pi">:</span> <span class="s">company-bulletin-board</span>
       <span class="s">name</span><span class="pi">:</span> <span class="s">company-bulletin-board</span>
     <span class="s">spec</span><span class="pi">:</span>
-      <span class="s">ports</span><span class="pi">:</span>
-<span class="err">    </span><span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">30100"</span>
-      <span class="s">port</span><span class="pi">:</span> <span class="s">30100</span>
-      <span class="s">targetPort</span><span class="pi">:</span> <span class="s">30100</span>
+      <span class="na">ports</span><span class="pi">:</span>
+<span class="err">    </span><span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">30100"</span>
+      <span class="na">port</span><span class="pi">:</span> <span class="s">30100</span>
+      <span class="na">targetPort</span><span class="pi">:</span> <span class="s">30100</span>
         <span class="s">selector</span><span class="pi">:</span>
       <span class="s">io.kompose.service</span><span class="pi">:</span> <span class="s">company-bulletin-board</span>
-      <span class="s">status</span><span class="pi">:</span>
-        <span class="s">loadBalancer</span><span class="pi">:</span> <span class="pi">{}</span>
-</code></pre>
-</div>
+      <span class="na">status</span><span class="pi">:</span>
+        <span class="na">loadBalancer</span><span class="pi">:</span> <span class="pi">{}</span>
+</code></pre></div></div>
 <p>The file defines the service of bulletin-board, and defines the name, port, and targetPort for the service, which is created by ‘kubectl expose’ to keep DNS capability in the cluster. Thus, other services can access the bulletin board and registry themselves.</p>
 
 <p>To the label and selector, it is useful to the situation of one-service to multiple-pods，When a pod dies, it is automatically removed from the endpoints, and new pods matching the Service’s selector will automatically get added to the endpoints.</p>
 
 <p>Read company-worker-deployment.yaml,</p>
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">apiVersion</span><span class="pi">:</span> <span class="s">extensions/v1beta1</span>
-<span class="s">kind</span><span class="pi">:</span> <span class="s">Deployment</span>
-<span class="s">metadata</span><span class="pi">:</span>
-  <span class="s">creationTimestamp</span><span class="pi">:</span> <span class="s">null</span>
-  <span class="s">labels</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">extensions/v1beta1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Deployment</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">creationTimestamp</span><span class="pi">:</span> <span class="no">null</span>
+  <span class="na">labels</span><span class="pi">:</span>
 <span class="err">	</span><span class="s">io.kompose.service</span><span class="pi">:</span> <span class="s">company-worker</span>
   <span class="s">name</span><span class="pi">:</span> <span class="s">company-worker</span>
-<span class="s">spec</span><span class="pi">:</span>
-  <span class="s">replicas</span><span class="pi">:</span> <span class="s">1</span>
-  <span class="s">strategy</span><span class="pi">:</span> <span class="pi">{}</span>
-  <span class="s">template</span><span class="pi">:</span>
-<span class="err">	</span><span class="s">metadata</span><span class="pi">:</span>
-<span class="err">  	</span><span class="s">creationTimestamp</span><span class="pi">:</span> <span class="s">null</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">replicas</span><span class="pi">:</span> <span class="s">1</span>
+  <span class="na">strategy</span><span class="pi">:</span> <span class="pi">{}</span>
+  <span class="na">template</span><span class="pi">:</span>
+<span class="err">	</span><span class="na">metadata</span><span class="pi">:</span>
+<span class="err">  	</span><span class="na">creationTimestamp</span><span class="pi">:</span> <span class="no">null</span>
   <span class="err">	</span><span class="s">labels</span><span class="pi">:</span>
 <span class="err">    	</span><span class="s">io.kompose.service</span><span class="pi">:</span> <span class="s">company-worker</span>
-<span class="s">spec</span><span class="pi">:</span>
-  <span class="s">containers</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s">env</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s">ARTIFACT_ID</span>
-      <span class="s">value</span><span class="pi">:</span> <span class="s">worker</span>
-    <span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s">JAVA_OPTS</span>
-      <span class="s">value</span><span class="pi">:</span> <span class="s">-Dcse.service.registry.address=http://company-bulletin-board:30100 -Dservicecomb.tracing.collector.adress=http://zipkin:9411</span>
-    <span class="s">image</span><span class="pi">:</span> <span class="s">servicecomb/worker:0.0.1-SNAPSHOT</span>
-    <span class="s">name</span><span class="pi">:</span> <span class="s">company-worker</span>
-    <span class="s">ports</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">containerPort</span><span class="pi">:</span> <span class="s">7070</span>
-    <span class="pi">-</span> <span class="s">containerPort</span><span class="pi">:</span> <span class="s">8080</span>
-    <span class="s">resources</span><span class="pi">:</span> <span class="pi">{}</span>
-  <span class="s">restartPolicy</span><span class="pi">:</span> <span class="s">Always</span>
-<span class="s">status</span><span class="pi">:</span> <span class="pi">{}</span>
-</code></pre>
-</div>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">containers</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">env</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">ARTIFACT_ID</span>
+      <span class="na">value</span><span class="pi">:</span> <span class="s">worker</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">JAVA_OPTS</span>
+      <span class="na">value</span><span class="pi">:</span> <span class="s">-Dcse.service.registry.address=http://company-bulletin-board:30100 -Dservicecomb.tracing.collector.adress=http://zipkin:9411</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">servicecomb/worker:0.0.1-SNAPSHOT</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">company-worker</span>
+    <span class="na">ports</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">containerPort</span><span class="pi">:</span> <span class="s">7070</span>
+    <span class="pi">-</span> <span class="na">containerPort</span><span class="pi">:</span> <span class="s">8080</span>
+    <span class="na">resources</span><span class="pi">:</span> <span class="pi">{}</span>
+  <span class="na">restartPolicy</span><span class="pi">:</span> <span class="s">Always</span>
+<span class="na">status</span><span class="pi">:</span> <span class="pi">{}</span>
+</code></pre></div></div>
 <p>The yaml defines a pod with one replica (replicas: 1), which can be modified to control the number of replicas of the pod(Anyway, the flexibility of the K8S scalability to achieve on-demand dynamic horizontal expansion to reach the purpose, material of K8S scalability will be provided later in the website). We mentioned that the company-bulletin-board is a DNS name, it is used as the value of servicecomb.service.registry.address and passed to the service within the pod, such as: -Dcse.service. Registry.address = http: // company-bulletin-board: 30100, <a href="https://github.com/kubernetes/kubernetes/blob/master/cluster/addons/dns/README.md">kube-dns</a> Automatically resolve the servicename.</p>
 
 <p>Read <a href="https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/">connect-applications-service</a> to understanding the communication of services in K8S cluster.</p>
 
 <p>Other deployment.yaml and service.yaml are similar to the above except manager service, nodePort is defined in the company-manager-service.yaml to provide External-IP and Service-Port, as follows,</p>
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">spec</span><span class="pi">:</span>
-  <span class="s">ports</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">8083"</span>
-<span class="err">  	</span><span class="s">port</span><span class="pi">:</span> <span class="s">8083</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">spec</span><span class="pi">:</span>
+  <span class="na">ports</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">8083"</span>
+<span class="err">  	</span><span class="na">port</span><span class="pi">:</span> <span class="s">8083</span>
   <span class="err">	</span><span class="s">targetPort</span><span class="pi">:</span> <span class="s">8080</span>
   <span class="err">	</span><span class="s">nodePort</span><span class="pi">:</span> <span class="s">30301</span>
   <span class="err">	</span><span class="s">protocol</span><span class="pi">:</span> <span class="s">TCP</span>
   <span class="s">type</span><span class="pi">:</span> <span class="s">NodePort</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Get the External-IP and Service-Port by commands,</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>kubectl get svc company-manager -o yaml | grep ExternalIP -C 1
-kubectl get svc company-manager -o yaml | grep nodePort -C 1
-</code></pre>
-</div>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get svc company-manager <span class="nt">-o</span> yaml | <span class="nb">grep </span>ExternalIP <span class="nt">-C</span> 1
+kubectl get svc company-manager <span class="nt">-o</span> yaml | <span class="nb">grep </span>nodePort <span class="nt">-C</span> 1
+</code></pre></div></div>
 
 <p>Now, you can use the External-IP and nodePort to visit company, Read <a href="https://github.com/ServiceComb/ServiceComb-Company-WorkShop/blob/master/kubernetes/README.md">github.com/ServiceComb/ServiceComb-Company-WorkShop/kubernetes</a> to get details about how to visit it inside or outside the cluster.</p>
 
@@ -498,7 +491,7 @@ kubectl get svc company-manager -o yaml | grep nodePort -C 1
 
 <p>You can sort out the following model by reading all the deployment.yaml and service.yaml in detail,</p>
 
-<p><img src="/assets/images/kubernetes-company.png" alt="kubernetes-company" class="align-center" /></p>
+<p><img src="http://localhost:4000/assets/images/kubernetes-company.png" alt="kubernetes-company" class="align-center" /></p>
 
 <p>In addition, the classic air ticketing system ‘Acmeair’ has also been supported <a href="https://github.com/WillemJiang/acmeair/tree/master/kubernetes">one-click-deployment-at-kubernetes</a> based on the version developed by the ServiceComb framework.</p>
 
@@ -521,11 +514,11 @@ kubectl get svc company-manager -o yaml | grep nodePort -C 1
     
       
       
-      <a href="/tags/#deployment" class="page__taxonomy-item" rel="tag">deployment</a><span class="sep">, </span>
+      <a href="http://localhost:4000/tags/#deployment" class="page__taxonomy-item" rel="tag">deployment</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#kubernetes" class="page__taxonomy-item" rel="tag">kubernetes</a>
+      <a href="http://localhost:4000/tags/#kubernetes" class="page__taxonomy-item" rel="tag">kubernetes</a>
     
     </span>
   </p>
@@ -548,24 +541,24 @@ kubectl get svc company-manager -o yaml | grep nodePort -C 1
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=ServiceComb&text=One-click Deployment at Kubernetes /docs/company-on-kubernetes/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=ServiceComb&text=One-click Deployment at Kubernetes http://localhost:4000/docs/company-on-kubernetes/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=/docs/company-on-kubernetes/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/docs/company-on-kubernetes/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=/docs/company-on-kubernetes/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=http://localhost:4000/docs/company-on-kubernetes/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=/docs/company-on-kubernetes/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/docs/company-on-kubernetes/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/cn/docs/communication-btw-sc-ms/" class="pagination--pager" title="Communication Between Service-Center and MicroServices
+      <a href="http://localhost:4000/cn/docs/communication-btw-sc-ms/" class="pagination--pager" title="Communication Between Service-Center and MicroServices
 ">Previous</a>
     
     
-      <a href="/cn/docs/company-on-kubernetes/" class="pagination--pager" title="在kubernetes上一键式部署company
+      <a href="http://localhost:4000/cn/docs/company-on-kubernetes/" class="pagination--pager" title="在kubernetes上一键式部署company
 ">Next</a>
     
   </nav>
@@ -649,69 +642,11 @@ kubectl get svc company-manager -o yaml | grep nodePort -C 1
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/cn/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+        <a href="http://localhost:4000/cn/docs/Apache-ServiceComb-Meetup-2018-Shanghai-Report/" rel="permalink">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </a>
       
     </h2>
-    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</p>
-    
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
-
-
-
-
-  1 minute read
-
-</p>
-    
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</a>
-      
-    </h2>
-    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</p>
-    
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
-
-
-
-
-  1 minute read
-
-</p>
-    
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/cn/docs/Apache-ServiceComb-Meetup-2018-Shanghai/" rel="permalink">Apache ServiceComb (incubating) Meetup -上海 2018.10.12
-</a>
-      
-    </h2>
-    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb (incubating) Meetup
+    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </p>
     
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -736,11 +671,11 @@ kubectl get svc company-manager -o yaml | grep nodePort -C 1
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/docs/Apache-ServiceComb-Meetup-2018-Shanghai/" rel="permalink">Apache ServiceComb (incubating) Meetup -Shanghai 2018.10.12
+        <a href="http://localhost:4000/docs/Apache-ServiceComb-Meetup-2018-Shanghai-Report/" rel="permalink">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </a>
       
     </h2>
-    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb (incubating) Meetup
+    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb Meetup Report (PPT)
 </p>
     
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -748,7 +683,65 @@ kubectl get svc company-manager -o yaml | grep nodePort -C 1
 
 
 
-  4 minute read
+  2 minute read
+
+</p>
+    
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/cn/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</a>
+      
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</p>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+
+</p>
+    
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</a>
+      
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</p>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
 
 </p>
     
@@ -821,7 +814,7 @@ kubectl get svc company-manager -o yaml | grep nodePort -C 1
             <a href="https://twitter.com/ServiceComb" target="_blank"><span class="twitter">Twitter</span></a>
         </li>
         <li>
-            <a href="/feed.xml" target="_blank"><span class="rss">Feed</span></a>
+            <a href="http://localhost:4000/feed.xml" target="_blank"><span class="rss">Feed</span></a>
         </li>
       </ul>
     </div>
@@ -835,7 +828,7 @@ kubectl get svc company-manager -o yaml | grep nodePort -C 1
       </footer>
     </div>
 
-    <script src="/assets/js/main.min.js"></script>
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
 
 
 

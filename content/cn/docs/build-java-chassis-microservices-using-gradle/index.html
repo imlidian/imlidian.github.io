@@ -36,8 +36,8 @@
 <meta property="og:title" content="使用gradle构建基于Java Chassis开发的微服务">
 
 
-  <link rel="canonical" href="http://github.com/pages/apache/incubator-servicecomb-website/cn/docs/build-java-chassis-microservices-using-gradle/">
-  <meta property="og:url" content="http://github.com/pages/apache/incubator-servicecomb-website/cn/docs/build-java-chassis-microservices-using-gradle/">
+  <link rel="canonical" href="http://localhost:4000/cn/docs/build-java-chassis-microservices-using-gradle/">
+  <meta property="og:url" content="http://localhost:4000/cn/docs/build-java-chassis-microservices-using-gradle/">
 
 
 
@@ -48,7 +48,7 @@
   <meta name="twitter:site" content="@ServiceComb">
   <meta name="twitter:title" content="使用gradle构建基于Java Chassis开发的微服务">
   <meta name="twitter:description" content="The homepage of ServiceComb">
-  <meta name="twitter:url" content="">
+  <meta name="twitter:url" content="http://localhost:4000/cn/docs/build-java-chassis-microservices-using-gradle/">
 
   
     <meta name="twitter:card" content="summary">
@@ -84,7 +84,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "Apache ServiceComb",
-      "url" : "http://github.com/pages/apache/incubator-servicecomb-website",
+      "url" : "http://localhost:4000",
       "sameAs" : null
     }
   </script>
@@ -99,7 +99,7 @@
 <!-- end SEO -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Apache ServiceComb Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Apache ServiceComb Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -110,7 +110,7 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
-<script src="/assets/vendor/prism/prism.js"></script>
+<script src="http://localhost:4000/assets/vendor/prism/prism.js"></script>
 
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -122,8 +122,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="/assets/vendor/prism/prism.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/vendor/prism/prism.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -146,7 +146,7 @@
 
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 <link href="https://fonts.cat.net/css?family=Roboto:400,500,700|Source+Code+Pro" rel="stylesheet">
-<script src="/assets/js/custom.js"></script>
+<script src="http://localhost:4000/assets/js/custom.js"></script>
 <!-- end custom head snippets -->
 
   </head>
@@ -161,7 +161,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
 	      
-          <a class="site-title active" href="/cn"><img src="https://www.apache.org/img/servicecomb.png"></a>
+          <a class="site-title active" href="http://localhost:4000/cn"><img src="https://www.apache.org/img/servicecomb.png"></a>
 	      
         <ul class="visible-links">
           
@@ -170,7 +170,7 @@
               
               
               
-                <a href="/cn/docs/quick-start/">快速入门</a>
+                <a href="http://localhost:4000/cn/docs/quick-start/">快速入门</a>
               
             </li>
           
@@ -179,7 +179,7 @@
               
               
               
-                <a href="/cn/users/">用户手册</a>
+                <a href="http://localhost:4000/cn/users/">用户手册</a>
               
             </li>
           
@@ -188,7 +188,7 @@
               
               
               
-                <a href="/cn/developers/">开发者手册</a>
+                <a href="http://localhost:4000/cn/developers/">开发者手册</a>
               
             </li>
           
@@ -197,7 +197,7 @@
               
               
               
-                <a href="/cn/year-archive/">博文</a>
+                <a href="http://localhost:4000/cn/year-archive/">博文</a>
               
             </li>
           
@@ -206,7 +206,7 @@
               
               
               
-                <a href="/cn/faqs/">常见问题</a>
+                <a href="http://localhost:4000/cn/faqs/">常见问题</a>
               
             </li>
           
@@ -215,7 +215,7 @@
               
               
               
-                <a href="/cn/release/">下载</a>
+                <a href="http://localhost:4000/cn/release/">下载</a>
               
             </li>
           
@@ -377,7 +377,7 @@
 
 <p>在maven中，Java Chassis的依赖管理通过以下方式即可引入：</p>
 
-<div class="language-xml highlighter-rouge"><pre class="highlight"><code>   <span class="nt">&lt;dependencyManagement&gt;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="nt">&lt;dependencyManagement&gt;</span>
      <span class="nt">&lt;dependencies&gt;</span>
        <span class="nt">&lt;dependency&gt;</span>
          <span class="nt">&lt;groupId&gt;</span>org.apache.servicecomb<span class="nt">&lt;/groupId&gt;</span>
@@ -388,8 +388,7 @@
        <span class="nt">&lt;/dependency&gt;</span>
      <span class="nt">&lt;/dependencies&gt;</span>
    <span class="nt">&lt;/dependencyManagement&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>在gradle中，则需要以下三步完成，具体可参考 ：<a href="https://github.com/apache/incubator-servicecomb-java-chassis/pull/640/files#diff-8d0fdb4970d74d053b6585c3d5ae4cc2R36">Java Chassis的PR-640</a>。</p>
 
@@ -397,7 +396,7 @@
   <li>
     <p>声明使用maven仓库及依赖管理插件的依赖</p>
 
-    <div class="language-gradle highlighter-rouge"><pre class="highlight"><code><span class="k">buildscript</span> <span class="o">{</span>
+    <div class="language-gradle highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">buildscript</span> <span class="o">{</span>
     <span class="k">repositories</span> <span class="o">{</span>
         <span class="n">mavenLocal</span><span class="o">()</span>
         <span class="n">mavenCentral</span><span class="o">()</span>
@@ -406,26 +405,23 @@
         <span class="n">classpath</span><span class="o">(</span><span class="s1">'io.spring.gradle:dependency-management-plugin:1.0.4.RELEASE'</span><span class="o">)</span>
     <span class="o">}</span>
 <span class="o">}</span>
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>
     <p>启用依赖管理插件</p>
 
-    <div class="language-gradle highlighter-rouge"><pre class="highlight"><code><span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">'io.spring.dependency-management'</span>
-</code></pre>
-    </div>
+    <div class="language-gradle highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">'io.spring.dependency-management'</span>
+</code></pre></div>    </div>
   </li>
   <li>
     <p>声明Java Chassis的统一依赖管理</p>
 
-    <div class="language-gradle highlighter-rouge"><pre class="highlight"><code><span class="n">dependencyManagement</span> <span class="o">{</span>
+    <div class="language-gradle highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dependencyManagement</span> <span class="o">{</span>
     <span class="n">imports</span> <span class="o">{</span>
         <span class="n">mavenBom</span> <span class="s1">'org.apache.servicecomb:java-chassis-dependencies:1.0.0-m1'</span>
     <span class="o">}</span>
 <span class="o">}</span>
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
 </ol>
 
@@ -441,7 +437,7 @@
       <li>
         <p>声明使用maven仓库及Spring Boot插件的依赖</p>
 
-        <div class="language-gradle highlighter-rouge"><pre class="highlight"><code><span class="k">buildscript</span> <span class="o">{</span>
+        <div class="language-gradle highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">buildscript</span> <span class="o">{</span>
     <span class="k">dependencies</span> <span class="o">{</span>
         <span class="n">classpath</span><span class="o">(</span><span class="s2">"org.springframework.boot:spring-boot-gradle-plugin:1.4.5.RELEASE"</span><span class="o">)</span>
     <span class="o">}</span>
@@ -450,15 +446,13 @@
         <span class="n">mavenCentral</span><span class="o">()</span>
     <span class="o">}</span>
 <span class="o">}</span>
-</code></pre>
-        </div>
+</code></pre></div>        </div>
       </li>
       <li>
         <p>启用Spring Boot插件</p>
 
-        <div class="language-gradle highlighter-rouge"><pre class="highlight"><code><span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">'org.springframework.boot'</span>
-</code></pre>
-        </div>
+        <div class="language-gradle highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">'org.springframework.boot'</span>
+</code></pre></div>        </div>
       </li>
     </ol>
   </li>
@@ -467,11 +461,10 @@
 
     <p>非Spring Boot应用只需要在<code class="highlighter-rouge">build.gradle</code>文件中使用<code class="highlighter-rouge">application</code>插件并指明应用入口方法即可：</p>
 
-    <div class="language-gradle highlighter-rouge"><pre class="highlight"><code><span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">'application'</span>
+    <div class="language-gradle highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">'application'</span>
 
 <span class="n">mainClassName</span> <span class="o">=</span> <span class="s1">'org.packageName.XXXMain'</span>
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
 </ol>
 
@@ -494,7 +487,7 @@
     
       
       
-      <a href="/tags/#gradle" class="page__taxonomy-item" rel="tag">gradle</a>
+      <a href="http://localhost:4000/tags/#gradle" class="page__taxonomy-item" rel="tag">gradle</a>
     
     </span>
   </p>
@@ -517,24 +510,24 @@
     <h4 class="page__share-title">分享</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=ServiceComb&text=使用gradle构建基于Java Chassis开发的微服务 /cn/docs/build-java-chassis-microservices-using-gradle/" class="btn btn--twitter" title="分享 Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=ServiceComb&text=使用gradle构建基于Java Chassis开发的微服务 http://localhost:4000/cn/docs/build-java-chassis-microservices-using-gradle/" class="btn btn--twitter" title="分享 Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=/cn/docs/build-java-chassis-microservices-using-gradle/" class="btn btn--facebook" title="分享 Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/cn/docs/build-java-chassis-microservices-using-gradle/" class="btn btn--facebook" title="分享 Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=/cn/docs/build-java-chassis-microservices-using-gradle/" class="btn btn--google-plus" title="分享 Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=http://localhost:4000/cn/docs/build-java-chassis-microservices-using-gradle/" class="btn btn--google-plus" title="分享 Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=/cn/docs/build-java-chassis-microservices-using-gradle/" class="btn btn--linkedin" title="分享 LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/cn/docs/build-java-chassis-microservices-using-gradle/" class="btn btn--linkedin" title="分享 LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/cn/docs/saga_pack_design/" class="pagination--pager" title="ServiceComb数据一致性解决方案Saga演进介绍
+      <a href="http://localhost:4000/cn/docs/saga_pack_design/" class="pagination--pager" title="ServiceComb数据一致性解决方案Saga演进介绍
 ">向前</a>
     
     
-      <a href="/cn/docs/open-design/" class="pagination--pager" title="如何设计一个优质的微服务框架：Apache ServiceComb 的开放性设计
+      <a href="http://localhost:4000/cn/docs/open-design/" class="pagination--pager" title="如何设计一个优质的微服务框架：Apache ServiceComb 的开放性设计
 ">向后</a>
     
   </nav>
@@ -618,69 +611,11 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/cn/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+        <a href="http://localhost:4000/cn/docs/Apache-ServiceComb-Meetup-2018-Shanghai-Report/" rel="permalink">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </a>
       
     </h2>
-    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</p>
-    
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
-
-
-
-
-  1 分钟 阅读
-
-</p>
-    
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</a>
-      
-    </h2>
-    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</p>
-    
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
-
-
-
-
-  1 分钟 阅读
-
-</p>
-    
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/cn/docs/Apache-ServiceComb-Meetup-2018-Shanghai/" rel="permalink">Apache ServiceComb (incubating) Meetup -上海 2018.10.12
-</a>
-      
-    </h2>
-    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb (incubating) Meetup
+    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </p>
     
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -705,11 +640,11 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/docs/Apache-ServiceComb-Meetup-2018-Shanghai/" rel="permalink">Apache ServiceComb (incubating) Meetup -Shanghai 2018.10.12
+        <a href="http://localhost:4000/docs/Apache-ServiceComb-Meetup-2018-Shanghai-Report/" rel="permalink">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </a>
       
     </h2>
-    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb (incubating) Meetup
+    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb Meetup Report (PPT)
 </p>
     
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -717,7 +652,65 @@
 
 
 
-  4 分钟 阅读
+  2 分钟 阅读
+
+</p>
+    
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/cn/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</a>
+      
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</p>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 分钟 阅读
+
+</p>
+    
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</a>
+      
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</p>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 分钟 阅读
 
 </p>
     
@@ -790,7 +783,7 @@
             <a href="https://twitter.com/ServiceComb" target="_blank"><span class="twitter">Twitter</span></a>
         </li>
         <li>
-            <a href="/feed.xml" target="_blank"><span class="rss">Feed</span></a>
+            <a href="http://localhost:4000/feed.xml" target="_blank"><span class="rss">Feed</span></a>
         </li>
       </ul>
     </div>
@@ -804,7 +797,7 @@
       </footer>
     </div>
 
-    <script src="/assets/js/main.min.js"></script>
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
 
 
 

@@ -36,8 +36,8 @@
 <meta property="og:title" content="使用JMeter对秒杀示例进行性能测试">
 
 
-  <link rel="canonical" href="http://github.com/pages/apache/incubator-servicecomb-website/cn/docs/performance-test-on-seckill-with-jmeter/">
-  <meta property="og:url" content="http://github.com/pages/apache/incubator-servicecomb-website/cn/docs/performance-test-on-seckill-with-jmeter/">
+  <link rel="canonical" href="http://localhost:4000/cn/docs/performance-test-on-seckill-with-jmeter/">
+  <meta property="og:url" content="http://localhost:4000/cn/docs/performance-test-on-seckill-with-jmeter/">
 
 
 
@@ -48,7 +48,7 @@
   <meta name="twitter:site" content="@ServiceComb">
   <meta name="twitter:title" content="使用JMeter对秒杀示例进行性能测试">
   <meta name="twitter:description" content="介绍如何使用JMeter进行性能测试以及获取秒杀示例的性能基线">
-  <meta name="twitter:url" content="">
+  <meta name="twitter:url" content="http://localhost:4000/cn/docs/performance-test-on-seckill-with-jmeter/">
 
   
     <meta name="twitter:card" content="summary">
@@ -84,7 +84,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "Apache ServiceComb",
-      "url" : "http://github.com/pages/apache/incubator-servicecomb-website",
+      "url" : "http://localhost:4000",
       "sameAs" : null
     }
   </script>
@@ -99,7 +99,7 @@
 <!-- end SEO -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Apache ServiceComb Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Apache ServiceComb Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -110,7 +110,7 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
-<script src="/assets/vendor/prism/prism.js"></script>
+<script src="http://localhost:4000/assets/vendor/prism/prism.js"></script>
 
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -122,8 +122,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="/assets/vendor/prism/prism.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/vendor/prism/prism.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -146,7 +146,7 @@
 
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 <link href="https://fonts.cat.net/css?family=Roboto:400,500,700|Source+Code+Pro" rel="stylesheet">
-<script src="/assets/js/custom.js"></script>
+<script src="http://localhost:4000/assets/js/custom.js"></script>
 <!-- end custom head snippets -->
 
   </head>
@@ -161,7 +161,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
 	      
-          <a class="site-title active" href="/cn"><img src="https://www.apache.org/img/servicecomb.png"></a>
+          <a class="site-title active" href="http://localhost:4000/cn"><img src="https://www.apache.org/img/servicecomb.png"></a>
 	      
         <ul class="visible-links">
           
@@ -170,7 +170,7 @@
               
               
               
-                <a href="/cn/docs/quick-start/">快速入门</a>
+                <a href="http://localhost:4000/cn/docs/quick-start/">快速入门</a>
               
             </li>
           
@@ -179,7 +179,7 @@
               
               
               
-                <a href="/cn/users/">用户手册</a>
+                <a href="http://localhost:4000/cn/users/">用户手册</a>
               
             </li>
           
@@ -188,7 +188,7 @@
               
               
               
-                <a href="/cn/developers/">开发者手册</a>
+                <a href="http://localhost:4000/cn/developers/">开发者手册</a>
               
             </li>
           
@@ -197,7 +197,7 @@
               
               
               
-                <a href="/cn/year-archive/">博文</a>
+                <a href="http://localhost:4000/cn/year-archive/">博文</a>
               
             </li>
           
@@ -206,7 +206,7 @@
               
               
               
-                <a href="/cn/faqs/">常见问题</a>
+                <a href="http://localhost:4000/cn/faqs/">常见问题</a>
               
             </li>
           
@@ -215,7 +215,7 @@
               
               
               
-                <a href="/cn/release/">下载</a>
+                <a href="http://localhost:4000/cn/release/">下载</a>
               
             </li>
           
@@ -392,10 +392,9 @@
 
 <p>　　脚本文件已经托管至秒杀项目中，可直接获取：</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/ServiceComb/seckill
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/ServiceComb/seckill
 <span class="nb">cd </span>seckill/performance-test/script
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="性能测试环境">性能测试环境</h2>
 <p>　　我们调来了两台云服务器进行性能测试，角色和配置如下：</p>
@@ -427,20 +426,19 @@
 
 <p>　　为了能够便于配置和启动示例系统，我们采用《秒杀开发历程（三）》中的一键启动模式拉起所有的服务，因此Docker升级为当前最新版17.06.2-ce，能够支持配置Container使用CPU和内存的大小限制，以Admin微服务为例：
 　　</p>
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code>  <span class="s">admin-service</span><span class="pi">:</span>
-    <span class="s">mem_limit</span><span class="pi">:</span> <span class="s">4096m</span>
-    <span class="s">cpu_count</span><span class="pi">:</span> <span class="s">4</span>
-    <span class="s">cpu_percent</span><span class="pi">:</span> <span class="s">50</span>
-    <span class="s">image</span><span class="pi">:</span> <span class="s2">"</span><span class="s">seckill-admin-service:0.2.0-SNAPSHOT"</span>
-    <span class="s">hostname</span><span class="pi">:</span> <span class="s">admin-service</span>
-    <span class="s">links</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="na">admin-service</span><span class="pi">:</span>
+    <span class="na">mem_limit</span><span class="pi">:</span> <span class="s">4096m</span>
+    <span class="na">cpu_count</span><span class="pi">:</span> <span class="s">4</span>
+    <span class="na">cpu_percent</span><span class="pi">:</span> <span class="s">50</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s2">"</span><span class="s">seckill-admin-service:0.2.0-SNAPSHOT"</span>
+    <span class="na">hostname</span><span class="pi">:</span> <span class="s">admin-service</span>
+    <span class="na">links</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">mysql-write-db:write_db.servicecomb.io"</span>
-    <span class="s">environment</span><span class="pi">:</span>
+    <span class="na">environment</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s">JAVA_OPTS=-Dspring.profiles.active=prd -Dendpoints.shutdown.enabled=true</span>
-    <span class="s">ports</span><span class="pi">:</span>
+    <span class="na">ports</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">8081:8081"</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="加压机配置">加压机配置</h3>
 <p>　　加压机与秒杀服务器处于同一网络环境中，配置如下：
@@ -456,16 +454,14 @@
 　　
 　　现在，我们切换到性能测试脚本目录下，执行下面的命令启动测试：
 　　</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>jmeter -n -t seckill.jmx -l log.jtl
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jmeter <span class="nt">-n</span> <span class="nt">-t</span> seckill.jmx <span class="nt">-l</span> log.jtl
+</code></pre></div></div>
 
 <h2 id="测试结果">测试结果</h2>
 <p>　　测试完毕后通过下面的命令分析测试结果日志数据，请将<report folder="">替换为你的本地目录：</report></p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>jmeter -g log.jtl -o &lt;report folder&gt;
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jmeter <span class="nt">-g</span> log.jtl <span class="nt">-o</span> &lt;report folder&gt;
+</code></pre></div></div>
 
 <p>　　我们需要先验证测试结果的正确性，查看数据统计图：</p>
 
@@ -520,11 +516,11 @@
     
       
       
-      <a href="/tags/#seckill" class="page__taxonomy-item" rel="tag">seckill</a><span class="sep">, </span>
+      <a href="http://localhost:4000/tags/#seckill" class="page__taxonomy-item" rel="tag">seckill</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95" class="page__taxonomy-item" rel="tag">压力测试</a>
+      <a href="http://localhost:4000/tags/#%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95" class="page__taxonomy-item" rel="tag">压力测试</a>
     
     </span>
   </p>
@@ -547,24 +543,24 @@
     <h4 class="page__share-title">分享</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=ServiceComb&text=使用JMeter对秒杀示例进行性能测试 /cn/docs/performance-test-on-seckill-with-jmeter/" class="btn btn--twitter" title="分享 Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=ServiceComb&text=使用JMeter对秒杀示例进行性能测试 http://localhost:4000/cn/docs/performance-test-on-seckill-with-jmeter/" class="btn btn--twitter" title="分享 Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=/cn/docs/performance-test-on-seckill-with-jmeter/" class="btn btn--facebook" title="分享 Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/cn/docs/performance-test-on-seckill-with-jmeter/" class="btn btn--facebook" title="分享 Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=/cn/docs/performance-test-on-seckill-with-jmeter/" class="btn btn--google-plus" title="分享 Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=http://localhost:4000/cn/docs/performance-test-on-seckill-with-jmeter/" class="btn btn--google-plus" title="分享 Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=/cn/docs/performance-test-on-seckill-with-jmeter/" class="btn btn--linkedin" title="分享 LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/cn/docs/performance-test-on-seckill-with-jmeter/" class="btn btn--linkedin" title="分享 LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/cn/docs/maven_dependency_management/" class="pagination--pager" title="使用maven管理复杂依赖关系的技巧
+      <a href="http://localhost:4000/cn/docs/maven_dependency_management/" class="pagination--pager" title="使用maven管理复杂依赖关系的技巧
 ">向前</a>
     
     
-      <a href="/docs/distributed_saga_2/" class="pagination--pager" title="Eventual Data Consistency Solution in ServiceComb - part 2
+      <a href="http://localhost:4000/docs/distributed_saga_2/" class="pagination--pager" title="Eventual Data Consistency Solution in ServiceComb - part 2
 ">向后</a>
     
   </nav>
@@ -648,69 +644,11 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/cn/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+        <a href="http://localhost:4000/cn/docs/Apache-ServiceComb-Meetup-2018-Shanghai-Report/" rel="permalink">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </a>
       
     </h2>
-    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</p>
-    
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
-
-
-
-
-  1 分钟 阅读
-
-</p>
-    
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</a>
-      
-    </h2>
-    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</p>
-    
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
-
-
-
-
-  1 分钟 阅读
-
-</p>
-    
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/cn/docs/Apache-ServiceComb-Meetup-2018-Shanghai/" rel="permalink">Apache ServiceComb (incubating) Meetup -上海 2018.10.12
-</a>
-      
-    </h2>
-    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb (incubating) Meetup
+    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </p>
     
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -735,11 +673,11 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/docs/Apache-ServiceComb-Meetup-2018-Shanghai/" rel="permalink">Apache ServiceComb (incubating) Meetup -Shanghai 2018.10.12
+        <a href="http://localhost:4000/docs/Apache-ServiceComb-Meetup-2018-Shanghai-Report/" rel="permalink">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </a>
       
     </h2>
-    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb (incubating) Meetup
+    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb Meetup Report (PPT)
 </p>
     
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -747,7 +685,65 @@
 
 
 
-  4 分钟 阅读
+  2 分钟 阅读
+
+</p>
+    
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/cn/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</a>
+      
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</p>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 分钟 阅读
+
+</p>
+    
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</a>
+      
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</p>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 分钟 阅读
 
 </p>
     
@@ -820,7 +816,7 @@
             <a href="https://twitter.com/ServiceComb" target="_blank"><span class="twitter">Twitter</span></a>
         </li>
         <li>
-            <a href="/feed.xml" target="_blank"><span class="rss">Feed</span></a>
+            <a href="http://localhost:4000/feed.xml" target="_blank"><span class="rss">Feed</span></a>
         </li>
       </ul>
     </div>
@@ -834,7 +830,7 @@
       </footer>
     </div>
 
-    <script src="/assets/js/main.min.js"></script>
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
 
 
 

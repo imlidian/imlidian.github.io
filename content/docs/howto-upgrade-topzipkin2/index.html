@@ -36,8 +36,8 @@
 <meta property="og:title" content="Howto Upgrade to Zipkin2">
 
 
-  <link rel="canonical" href="http://github.com/pages/apache/incubator-servicecomb-website/docs/howto-upgrade-topzipkin2/">
-  <meta property="og:url" content="http://github.com/pages/apache/incubator-servicecomb-website/docs/howto-upgrade-topzipkin2/">
+  <link rel="canonical" href="http://localhost:4000/docs/howto-upgrade-topzipkin2/">
+  <meta property="og:url" content="http://localhost:4000/docs/howto-upgrade-topzipkin2/">
 
 
 
@@ -48,7 +48,7 @@
   <meta name="twitter:site" content="@ServiceComb">
   <meta name="twitter:title" content="Howto Upgrade to Zipkin2">
   <meta name="twitter:description" content="Changes between v1 and v2 of zipkin and how Java Chassis upgraded to zipkin2">
-  <meta name="twitter:url" content="">
+  <meta name="twitter:url" content="http://localhost:4000/docs/howto-upgrade-topzipkin2/">
 
   
     <meta name="twitter:card" content="summary">
@@ -84,7 +84,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "Apache ServiceComb",
-      "url" : "http://github.com/pages/apache/incubator-servicecomb-website",
+      "url" : "http://localhost:4000",
       "sameAs" : null
     }
   </script>
@@ -99,7 +99,7 @@
 <!-- end SEO -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Apache ServiceComb Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Apache ServiceComb Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -110,7 +110,7 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
-<script src="/assets/vendor/prism/prism.js"></script>
+<script src="http://localhost:4000/assets/vendor/prism/prism.js"></script>
 
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -122,8 +122,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="/assets/vendor/prism/prism.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/vendor/prism/prism.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -146,7 +146,7 @@
 
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 <link href="https://fonts.cat.net/css?family=Roboto:400,500,700|Source+Code+Pro" rel="stylesheet">
-<script src="/assets/js/custom.js"></script>
+<script src="http://localhost:4000/assets/js/custom.js"></script>
 <!-- end custom head snippets -->
 
   </head>
@@ -161,7 +161,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
 	      
-          <a class="site-title active" href="/"><img src="https://www.apache.org/img/servicecomb.png"></a>
+          <a class="site-title active" href="http://localhost:4000/"><img src="https://www.apache.org/img/servicecomb.png"></a>
 	      
         <ul class="visible-links">
           
@@ -170,7 +170,7 @@
               
               
               
-                <a href="/docs/quick-start/">Quick Start</a>
+                <a href="http://localhost:4000/docs/quick-start/">Quick Start</a>
               
             </li>
           
@@ -179,7 +179,7 @@
               
               
               
-                <a href="/users/">Users</a>
+                <a href="http://localhost:4000/users/">Users</a>
               
             </li>
           
@@ -188,7 +188,7 @@
               
               
               
-                <a href="/developers/">Developers</a>
+                <a href="http://localhost:4000/developers/">Developers</a>
               
             </li>
           
@@ -197,7 +197,7 @@
               
               
               
-                <a href="/year-archive/">Blogs</a>
+                <a href="http://localhost:4000/year-archive/">Blogs</a>
               
             </li>
           
@@ -206,7 +206,7 @@
               
               
               
-                <a href="/faqs/">FAQ</a>
+                <a href="http://localhost:4000/faqs/">FAQ</a>
               
             </li>
           
@@ -215,7 +215,7 @@
               
               
               
-                <a href="/release/">Downloads</a>
+                <a href="http://localhost:4000/release/">Downloads</a>
               
             </li>
           
@@ -416,7 +416,7 @@
 <h3 id="modify-the-maven-dependencies-to-use-the-target-version-of-related-libraries">Modify the maven dependencies to use the target version of related libraries.</h3>
 <p>Change the group <code class="highlighter-rouge">io.zipkin.java</code> and <code class="highlighter-rouge">io.zipkin.reporter</code> to <code class="highlighter-rouge">io.zipkin.zipkin2</code> and <code class="highlighter-rouge">io.zipkin.reporter2</code> respectively.</p>
 
-<div class="language-diff highlighter-rouge"><pre class="highlight"><code>java-chassis-dependencies/pom.xml
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java-chassis-dependencies/pom.xml
 <span class="gu">@@ -50,8 +50,8 @@
 </span>     &lt;cxf.version&gt;3.1.6&lt;/cxf.version&gt;
      &lt;logback.version&gt;1.1.7&lt;/logback.version&gt;
@@ -458,14 +458,13 @@ handlers/handler-tracing-zipkin/pom.xml
      &lt;/dependency&gt;
      &lt;dependency&gt;
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="make-brave-to-use-zipkin2-instead-of-zipkin">Make brave to use zipkin2 instead of zipkin</h3>
 
 <p>Change the zipkin.xxx import to zipkin2.xxx on imports, and most importantly, use <code class="highlighter-rouge">spanReporter()</code> instead of <code class="highlighter-rouge">reporter()</code> for generating reporter for brave, change the api path to /api/v2/xxx when creating sender.</p>
 
-<div class="language-diff highlighter-rouge"><pre class="highlight"><code>handlers/handler-tracing-zipkin/src/main/java/org/apache/servicecomb/tracing/zipkin/TracingConfiguration.java
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code>handlers/handler-tracing-zipkin/src/main/java/org/apache/servicecomb/tracing/zipkin/TracingConfiguration.java
 <span class="gu">@@ -31,11 +31,11 @@
 </span> import brave.http.HttpTracing;
  import brave.propagation.CurrentTraceContext;
@@ -499,40 +498,37 @@ handlers/handler-tracing-zipkin/pom.xml
 </span><span class="gi">+        .spanReporter(reporter)
 </span>         .build();
    }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>Note</strong>:</p>
 
 <p>In the <a href="https://github.com/openzipkin/brave/releases/tag/4.7.1">brave release notes</a>, it’s stated that we need to use <code class="highlighter-rouge">create()</code> instead of <code class="highlighter-rouge">builder()</code></p>
 
-<div class="language-diff highlighter-rouge"><pre class="highlight"><code>
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
    /** Configuration for how to buffer spans into messages for Zipkin */
 <span class="gd">-  @Bean Reporter&lt;Span&gt; reporter() {
 -    return AsyncReporter.builder(sender()).build();
 </span><span class="gi">+  @Bean Reporter&lt;Span&gt; spanReporter() {
 +    return AsyncReporter.create(sender()).build();
 </span>   }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>But this will not work. In <code class="highlighter-rouge">zipkin2.Reporter</code>, the <code class="highlighter-rouge">create(sender)</code> is actually equivalent to <code class="highlighter-rouge">builder(sender).build()</code></p>
 
-<div class="language-java highlighter-rouge"><pre class="highlight"><code>  <span class="kd">public</span> <span class="kd">static</span> <span class="n">AsyncReporter</span><span class="o">&lt;</span><span class="n">Span</span><span class="o">&gt;</span> <span class="nf">create</span><span class="o">(</span><span class="n">Sender</span> <span class="n">sender</span><span class="o">)</span> <span class="o">{</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">public</span> <span class="kd">static</span> <span class="n">AsyncReporter</span><span class="o">&lt;</span><span class="n">Span</span><span class="o">&gt;</span> <span class="nf">create</span><span class="o">(</span><span class="n">Sender</span> <span class="n">sender</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">return</span> <span class="o">(</span><span class="k">new</span> <span class="n">AsyncReporter</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span><span class="n">sender</span><span class="o">)).</span><span class="na">build</span><span class="o">();</span>
   <span class="o">}</span>
   
   <span class="kd">public</span> <span class="kd">static</span> <span class="n">AsyncReporter</span><span class="o">.</span><span class="na">Builder</span> <span class="nf">builder</span><span class="o">(</span><span class="n">Sender</span> <span class="n">sender</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">return</span> <span class="k">new</span> <span class="n">AsyncReporter</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span><span class="n">sender</span><span class="o">);</span>
   <span class="o">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="make-changes-according-to-the-changes-of-zipkinspan-and-zipkin2span">Make changes according to the changes of zipkin.Span and zipkin2.Span.</h3>
 
 <p>We do not use zipkin.Span in our production code, but we do use it in our tests. Those changes are quite straight forward, we just change the accessing of fields to calling methods as described in the What’s Changed section.</p>
 
-<div class="language-diff highlighter-rouge"><pre class="highlight"><code>tracing/tracing-zipkin/src/test/java/org/apache/servicecomb/tracing/zipkin/ZipkinSpanAspectTest.java 
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tracing/tracing-zipkin/src/test/java/org/apache/servicecomb/tracing/zipkin/ZipkinSpanAspectTest.java 
 <span class="gu">@@ -45,7 +45,7 @@
 </span> import org.apache.servicecomb.tracing.zipkin.app.ZipkinSpanTestApplication;
  import org.apache.servicecomb.tracing.zipkin.app.ZipkinSpanTestApplication.CustomSpanTask;
@@ -587,8 +583,7 @@ handlers/handler-tracing-zipkin/pom.xml
 </span>           .build();
      }
    }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="support-both-v1-and-v2-api-of-zipkin-server">Support both v1 and v2 api of zipkin server.</h3>
 
@@ -596,11 +591,10 @@ handlers/handler-tracing-zipkin/pom.xml
 
 <p>Supporting v1 api is built into zipkin2, so we do not need to rely on the v1 libraries. Just use the <code class="highlighter-rouge">SpanBytesEncoder.JSON_V1</code> when building reporter and change the sender api path.</p>
 
-<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="n">sender</span> <span class="o">=</span> <span class="n">URLConnectionSender</span><span class="o">.</span><span class="na">create</span><span class="o">(</span><span class="s">"http://localhost:9411/api/v1/spans"</span><span class="o">)</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sender</span> <span class="o">=</span> <span class="n">URLConnectionSender</span><span class="o">.</span><span class="na">create</span><span class="o">(</span><span class="s">"http://localhost:9411/api/v1/spans"</span><span class="o">)</span>
 <span class="n">reporter</span> <span class="o">=</span> <span class="n">AsyncReporter</span><span class="o">.</span><span class="na">builder</span><span class="o">(</span><span class="n">sender</span><span class="o">)</span>
                         <span class="o">.</span><span class="na">build</span><span class="o">(</span><span class="n">SpanBytesEncoder</span><span class="o">.</span><span class="na">JSON_V1</span><span class="o">);</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>That’s all, for the complete changes, please refer the <a href="https://github.com/apache/incubator-servicecomb-java-chassis/pull/488">pull request</a> for the complete changes.</p>
 
@@ -631,7 +625,7 @@ handlers/handler-tracing-zipkin/pom.xml
     
       
       
-      <a href="/tags/#zipkin" class="page__taxonomy-item" rel="tag">zipkin</a>
+      <a href="http://localhost:4000/tags/#zipkin" class="page__taxonomy-item" rel="tag">zipkin</a>
     
     </span>
   </p>
@@ -654,24 +648,24 @@ handlers/handler-tracing-zipkin/pom.xml
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=ServiceComb&text=Howto Upgrade to Zipkin2 /docs/howto-upgrade-topzipkin2/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=ServiceComb&text=Howto Upgrade to Zipkin2 http://localhost:4000/docs/howto-upgrade-topzipkin2/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=/docs/howto-upgrade-topzipkin2/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/docs/howto-upgrade-topzipkin2/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=/docs/howto-upgrade-topzipkin2/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=http://localhost:4000/docs/howto-upgrade-topzipkin2/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=/docs/howto-upgrade-topzipkin2/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/docs/howto-upgrade-topzipkin2/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/docs/service-registry-refactor-proposal/" class="pagination--pager" title="Proposal for refactoring service registry module in Java Chassis
+      <a href="http://localhost:4000/docs/service-registry-refactor-proposal/" class="pagination--pager" title="Proposal for refactoring service registry module in Java Chassis
 ">Previous</a>
     
     
-      <a href="/cn/docs/config_center_integration/" class="pagination--pager" title="ServiceComb示例讲解微服务配置中心选型与对接
+      <a href="http://localhost:4000/cn/docs/config_center_integration/" class="pagination--pager" title="ServiceComb示例讲解微服务配置中心选型与对接
 ">Next</a>
     
   </nav>
@@ -755,69 +749,11 @@ handlers/handler-tracing-zipkin/pom.xml
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/cn/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+        <a href="http://localhost:4000/cn/docs/Apache-ServiceComb-Meetup-2018-Shanghai-Report/" rel="permalink">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </a>
       
     </h2>
-    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</p>
-    
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
-
-
-
-
-  1 minute read
-
-</p>
-    
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</a>
-      
-    </h2>
-    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</p>
-    
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
-
-
-
-
-  1 minute read
-
-</p>
-    
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/cn/docs/Apache-ServiceComb-Meetup-2018-Shanghai/" rel="permalink">Apache ServiceComb (incubating) Meetup -上海 2018.10.12
-</a>
-      
-    </h2>
-    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb (incubating) Meetup
+    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </p>
     
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -842,11 +778,11 @@ handlers/handler-tracing-zipkin/pom.xml
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/docs/Apache-ServiceComb-Meetup-2018-Shanghai/" rel="permalink">Apache ServiceComb (incubating) Meetup -Shanghai 2018.10.12
+        <a href="http://localhost:4000/docs/Apache-ServiceComb-Meetup-2018-Shanghai-Report/" rel="permalink">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </a>
       
     </h2>
-    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb (incubating) Meetup
+    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb Meetup Report (PPT)
 </p>
     
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -854,7 +790,65 @@ handlers/handler-tracing-zipkin/pom.xml
 
 
 
-  4 minute read
+  2 minute read
+
+</p>
+    
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/cn/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</a>
+      
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</p>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+
+</p>
+    
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</a>
+      
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</p>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
 
 </p>
     
@@ -927,7 +921,7 @@ handlers/handler-tracing-zipkin/pom.xml
             <a href="https://twitter.com/ServiceComb" target="_blank"><span class="twitter">Twitter</span></a>
         </li>
         <li>
-            <a href="/feed.xml" target="_blank"><span class="rss">Feed</span></a>
+            <a href="http://localhost:4000/feed.xml" target="_blank"><span class="rss">Feed</span></a>
         </li>
       </ul>
     </div>
@@ -941,7 +935,7 @@ handlers/handler-tracing-zipkin/pom.xml
       </footer>
     </div>
 
-    <script src="/assets/js/main.min.js"></script>
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
 
 
 

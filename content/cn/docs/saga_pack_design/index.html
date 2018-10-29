@@ -36,8 +36,8 @@
 <meta property="og:title" content="ServiceComb数据一致性解决方案Saga演进介绍">
 
 
-  <link rel="canonical" href="http://github.com/pages/apache/incubator-servicecomb-website/cn/docs/saga_pack_design/">
-  <meta property="og:url" content="http://github.com/pages/apache/incubator-servicecomb-website/cn/docs/saga_pack_design/">
+  <link rel="canonical" href="http://localhost:4000/cn/docs/saga_pack_design/">
+  <meta property="og:url" content="http://localhost:4000/cn/docs/saga_pack_design/">
 
 
 
@@ -48,7 +48,7 @@
   <meta name="twitter:site" content="@ServiceComb">
   <meta name="twitter:title" content="ServiceComb数据一致性解决方案Saga演进介绍">
   <meta name="twitter:description" content="Saga演进介绍">
-  <meta name="twitter:url" content="">
+  <meta name="twitter:url" content="http://localhost:4000/cn/docs/saga_pack_design/">
 
   
     <meta name="twitter:card" content="summary">
@@ -84,7 +84,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "Apache ServiceComb",
-      "url" : "http://github.com/pages/apache/incubator-servicecomb-website",
+      "url" : "http://localhost:4000",
       "sameAs" : null
     }
   </script>
@@ -99,7 +99,7 @@
 <!-- end SEO -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Apache ServiceComb Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Apache ServiceComb Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -110,7 +110,7 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
-<script src="/assets/vendor/prism/prism.js"></script>
+<script src="http://localhost:4000/assets/vendor/prism/prism.js"></script>
 
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -122,8 +122,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="/assets/vendor/prism/prism.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/vendor/prism/prism.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -146,7 +146,7 @@
 
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 <link href="https://fonts.cat.net/css?family=Roboto:400,500,700|Source+Code+Pro" rel="stylesheet">
-<script src="/assets/js/custom.js"></script>
+<script src="http://localhost:4000/assets/js/custom.js"></script>
 <!-- end custom head snippets -->
 
   </head>
@@ -161,7 +161,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
 	      
-          <a class="site-title active" href="/cn"><img src="https://www.apache.org/img/servicecomb.png"></a>
+          <a class="site-title active" href="http://localhost:4000/cn"><img src="https://www.apache.org/img/servicecomb.png"></a>
 	      
         <ul class="visible-links">
           
@@ -170,7 +170,7 @@
               
               
               
-                <a href="/cn/docs/quick-start/">快速入门</a>
+                <a href="http://localhost:4000/cn/docs/quick-start/">快速入门</a>
               
             </li>
           
@@ -179,7 +179,7 @@
               
               
               
-                <a href="/cn/users/">用户手册</a>
+                <a href="http://localhost:4000/cn/users/">用户手册</a>
               
             </li>
           
@@ -188,7 +188,7 @@
               
               
               
-                <a href="/cn/developers/">开发者手册</a>
+                <a href="http://localhost:4000/cn/developers/">开发者手册</a>
               
             </li>
           
@@ -197,7 +197,7 @@
               
               
               
-                <a href="/cn/year-archive/">博文</a>
+                <a href="http://localhost:4000/cn/year-archive/">博文</a>
               
             </li>
           
@@ -206,7 +206,7 @@
               
               
               
-                <a href="/cn/faqs/">常见问题</a>
+                <a href="http://localhost:4000/cn/faqs/">常见问题</a>
               
             </li>
           
@@ -215,7 +215,7 @@
               
               
               
-                <a href="/cn/release/">下载</a>
+                <a href="http://localhost:4000/cn/release/">下载</a>
               
             </li>
           
@@ -448,18 +448,16 @@
 
 <p>alpha启动前需要先运行数据库PostgreSQL：</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>docker run -d -e <span class="s2">"POSTGRES_DB=saga"</span> -e <span class="s2">"POSTGRES_USER=saga"</span> -e <span class="s2">"POSTGRES_PASSWORD=password"</span> -p 5432:5432 postgres
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-d</span> <span class="nt">-e</span> <span class="s2">"POSTGRES_DB=saga"</span> <span class="nt">-e</span> <span class="s2">"POSTGRES_USER=saga"</span> <span class="nt">-e</span> <span class="s2">"POSTGRES_PASSWORD=password"</span> <span class="nt">-p</span> 5432:5432 postgres
+</code></pre></div></div>
 
 <p>在确保数据库正常启动后，即可运行alpha：</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>docker run -d -p 8090:8090 <span class="se">\</span>
-  -e <span class="s2">"JAVA_OPTS=-Dspring.profiles.active=prd"</span> <span class="se">\</span>
-  -e <span class="s2">"spring.datasource.url=jdbc:postgresql://{docker.host.address}:5432/saga?useSSL=false"</span> <span class="se">\</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-d</span> <span class="nt">-p</span> 8090:8090 <span class="se">\</span>
+  <span class="nt">-e</span> <span class="s2">"JAVA_OPTS=-Dspring.profiles.active=prd"</span> <span class="se">\</span>
+  <span class="nt">-e</span> <span class="s2">"spring.datasource.url=jdbc:postgresql://{docker.host.address}:5432/saga?useSSL=false"</span> <span class="se">\</span>
   alpha-server:0.1.0
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="omega的使用">omega的使用</h3>
 
@@ -467,7 +465,7 @@
 
 <ol>
   <li>引入依赖
-    <div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
   <span class="nt">&lt;groupId&gt;</span>org.apache.servicecomb.saga<span class="nt">&lt;/groupId&gt;</span>
   <span class="nt">&lt;artifactId&gt;</span>omega-spring-starter<span class="nt">&lt;/artifactId&gt;</span>
   <span class="nt">&lt;version&gt;</span>0.1.0<span class="nt">&lt;/version&gt;</span>
@@ -477,30 +475,27 @@
   <span class="nt">&lt;artifactId&gt;</span>omega-transport-resttemplate<span class="nt">&lt;/artifactId&gt;</span>
   <span class="nt">&lt;version&gt;</span>0.1.0<span class="nt">&lt;/version&gt;</span>
 <span class="nt">&lt;/dependency&gt;</span>
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>添加Saga的注解及相应的补偿方法
 2.1 在应用入口添加 <code class="highlighter-rouge">@EnableOmega</code> 的注解来初始化omega的配置并与alpha建立连接。
-    <div class="language-java highlighter-rouge"><pre class="highlight"><code> <span class="nd">@SpringBootApplication</span>
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nd">@SpringBootApplication</span>
  <span class="nd">@EnableOmega</span>
  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Application</span> <span class="o">{</span>
    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
      <span class="n">SpringApplication</span><span class="o">.</span><span class="na">run</span><span class="o">(</span><span class="n">Application</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="n">args</span><span class="o">);</span>
    <span class="o">}</span>
  <span class="o">}</span>
-</code></pre>
-    </div>
+</code></pre></div>    </div>
     <p>2.2 在全局事务的起点添加 <code class="highlighter-rouge">@SagaStart</code> 的注解。</p>
-    <div class="language-java highlighter-rouge"><pre class="highlight"><code> <span class="nd">@SagaStart</span><span class="o">(</span><span class="n">timeout</span><span class="o">=</span><span class="mi">10</span><span class="o">)</span>
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nd">@SagaStart</span><span class="o">(</span><span class="n">timeout</span><span class="o">=</span><span class="mi">10</span><span class="o">)</span>
  <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">transferMoney</span><span class="o">(</span><span class="n">String</span> <span class="n">from</span><span class="o">,</span> <span class="n">String</span> <span class="n">to</span><span class="o">,</span> <span class="kt">int</span> <span class="n">amount</span><span class="o">)</span> <span class="o">{</span>
    <span class="n">transferOut</span><span class="o">(</span><span class="n">from</span><span class="o">,</span> <span class="n">amount</span><span class="o">);</span>
    <span class="n">transferIn</span><span class="o">(</span><span class="n">to</span><span class="o">,</span> <span class="n">amount</span><span class="o">);</span>
  <span class="o">}</span>
-</code></pre>
-    </div>
+</code></pre></div>    </div>
     <p>2.3 在子事务处添加 <code class="highlighter-rouge">@Compensable</code> 的注解并指明其对应的补偿方法。其中，补偿方法的形参列表需与子事务方法的形参列表保持一致。</p>
-    <div class="language-java highlighter-rouge"><pre class="highlight"><code> <span class="nd">@Compensable</span><span class="o">(</span><span class="n">timeout</span><span class="o">=</span><span class="mi">5</span><span class="o">,</span> <span class="n">compensationMethod</span><span class="o">=</span><span class="s">"cancel"</span><span class="o">)</span>
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nd">@Compensable</span><span class="o">(</span><span class="n">timeout</span><span class="o">=</span><span class="mi">5</span><span class="o">,</span> <span class="n">compensationMethod</span><span class="o">=</span><span class="s">"cancel"</span><span class="o">)</span>
  <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">transferOut</span><span class="o">(</span><span class="n">String</span> <span class="n">from</span><span class="o">,</span> <span class="kt">int</span> <span class="n">amount</span><span class="o">)</span> <span class="o">{</span>
    <span class="n">repo</span><span class="o">.</span><span class="na">reduceBalanceByUsername</span><span class="o">(</span><span class="n">from</span><span class="o">,</span> <span class="n">amount</span><span class="o">);</span>
  <span class="o">}</span>
@@ -508,19 +503,17 @@
  <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">cancel</span><span class="o">(</span><span class="n">String</span> <span class="n">from</span><span class="o">,</span> <span class="kt">int</span> <span class="n">amount</span><span class="o">)</span> <span class="o">{</span>
    <span class="n">repo</span><span class="o">.</span><span class="na">addBalanceByUsername</span><span class="o">(</span><span class="n">from</span><span class="o">,</span> <span class="n">amount</span><span class="o">);</span>
  <span class="o">}</span>
-</code></pre>
-    </div>
+</code></pre></div>    </div>
     <p>2.4 对转入服务重复第2.3步即可。</p>
 
     <p>2.5 在每个服务的application.yaml中添加配置项，指明服务信息和alpha的地址信息：</p>
-    <div class="language-yaml highlighter-rouge"><pre class="highlight"><code> <span class="s">spring</span><span class="pi">:</span>
-   <span class="s">application</span><span class="pi">:</span>
-     <span class="s">name</span><span class="pi">:</span> <span class="pi">{</span><span class="nv">application.name</span><span class="pi">}</span>
- <span class="s">alpha</span><span class="pi">:</span>
-   <span class="s">cluster</span><span class="pi">:</span>
-     <span class="s">address</span><span class="pi">:</span> <span class="pi">{</span><span class="nv">alpha.cluster.addresses</span><span class="pi">}</span>
-</code></pre>
-    </div>
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="na">spring</span><span class="pi">:</span>
+   <span class="na">application</span><span class="pi">:</span>
+     <span class="na">name</span><span class="pi">:</span> <span class="pi">{</span><span class="nv">application.name</span><span class="pi">}</span>
+ <span class="na">alpha</span><span class="pi">:</span>
+   <span class="na">cluster</span><span class="pi">:</span>
+     <span class="na">address</span><span class="pi">:</span> <span class="pi">{</span><span class="nv">alpha.cluster.addresses</span><span class="pi">}</span>
+</code></pre></div>    </div>
   </li>
 </ol>
 
@@ -557,7 +550,7 @@
     
       
       
-      <a href="/tags/#saga" class="page__taxonomy-item" rel="tag">saga</a>
+      <a href="http://localhost:4000/tags/#saga" class="page__taxonomy-item" rel="tag">saga</a>
     
     </span>
   </p>
@@ -580,24 +573,24 @@
     <h4 class="page__share-title">分享</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=ServiceComb&text=ServiceComb数据一致性解决方案Saga演进介绍 /cn/docs/saga_pack_design/" class="btn btn--twitter" title="分享 Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=ServiceComb&text=ServiceComb数据一致性解决方案Saga演进介绍 http://localhost:4000/cn/docs/saga_pack_design/" class="btn btn--twitter" title="分享 Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=/cn/docs/saga_pack_design/" class="btn btn--facebook" title="分享 Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/cn/docs/saga_pack_design/" class="btn btn--facebook" title="分享 Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=/cn/docs/saga_pack_design/" class="btn btn--google-plus" title="分享 Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=http://localhost:4000/cn/docs/saga_pack_design/" class="btn btn--google-plus" title="分享 Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=/cn/docs/saga_pack_design/" class="btn btn--linkedin" title="分享 LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/cn/docs/saga_pack_design/" class="btn btn--linkedin" title="分享 LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/cn/docs/join_the_community/" class="pagination--pager" title="如何加入ServiceComb社区
+      <a href="http://localhost:4000/cn/docs/join_the_community/" class="pagination--pager" title="如何加入ServiceComb社区
 ">向前</a>
     
     
-      <a href="/cn/docs/build-java-chassis-microservices-using-gradle/" class="pagination--pager" title="使用gradle构建基于Java Chassis开发的微服务
+      <a href="http://localhost:4000/cn/docs/build-java-chassis-microservices-using-gradle/" class="pagination--pager" title="使用gradle构建基于Java Chassis开发的微服务
 ">向后</a>
     
   </nav>
@@ -681,69 +674,11 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/cn/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+        <a href="http://localhost:4000/cn/docs/Apache-ServiceComb-Meetup-2018-Shanghai-Report/" rel="permalink">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </a>
       
     </h2>
-    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</p>
-    
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
-
-
-
-
-  1 分钟 阅读
-
-</p>
-    
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</a>
-      
-    </h2>
-    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</p>
-    
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
-
-
-
-
-  1 分钟 阅读
-
-</p>
-    
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/cn/docs/Apache-ServiceComb-Meetup-2018-Shanghai/" rel="permalink">Apache ServiceComb (incubating) Meetup -上海 2018.10.12
-</a>
-      
-    </h2>
-    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb (incubating) Meetup
+    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </p>
     
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -768,11 +703,11 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/docs/Apache-ServiceComb-Meetup-2018-Shanghai/" rel="permalink">Apache ServiceComb (incubating) Meetup -Shanghai 2018.10.12
+        <a href="http://localhost:4000/docs/Apache-ServiceComb-Meetup-2018-Shanghai-Report/" rel="permalink">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </a>
       
     </h2>
-    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb (incubating) Meetup
+    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb Meetup Report (PPT)
 </p>
     
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -780,7 +715,65 @@
 
 
 
-  4 分钟 阅读
+  2 分钟 阅读
+
+</p>
+    
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/cn/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</a>
+      
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</p>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 分钟 阅读
+
+</p>
+    
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</a>
+      
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</p>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 分钟 阅读
 
 </p>
     
@@ -853,7 +846,7 @@
             <a href="https://twitter.com/ServiceComb" target="_blank"><span class="twitter">Twitter</span></a>
         </li>
         <li>
-            <a href="/feed.xml" target="_blank"><span class="rss">Feed</span></a>
+            <a href="http://localhost:4000/feed.xml" target="_blank"><span class="rss">Feed</span></a>
         </li>
       </ul>
     </div>
@@ -867,7 +860,7 @@
       </footer>
     </div>
 
-    <script src="/assets/js/main.min.js"></script>
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
 
 
 

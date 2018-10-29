@@ -36,8 +36,8 @@
 <meta property="og:title" content="On-demand Resource Control for Micro-serviced Company by Autoscale">
 
 
-  <link rel="canonical" href="http://github.com/pages/apache/incubator-servicecomb-website/docs/autoscale-on-company/">
-  <meta property="og:url" content="http://github.com/pages/apache/incubator-servicecomb-website/docs/autoscale-on-company/">
+  <link rel="canonical" href="http://localhost:4000/docs/autoscale-on-company/">
+  <meta property="og:url" content="http://localhost:4000/docs/autoscale-on-company/">
 
 
 
@@ -48,7 +48,7 @@
   <meta name="twitter:site" content="@ServiceComb">
   <meta name="twitter:title" content="On-demand Resource Control for Micro-serviced Company by Autoscale">
   <meta name="twitter:description" content="This article introduces practice of using kubernetes autoscale in the micro-serviced Company demo to achieve on-demand resource control">
-  <meta name="twitter:url" content="">
+  <meta name="twitter:url" content="http://localhost:4000/docs/autoscale-on-company/">
 
   
     <meta name="twitter:card" content="summary">
@@ -84,7 +84,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "Apache ServiceComb",
-      "url" : "http://github.com/pages/apache/incubator-servicecomb-website",
+      "url" : "http://localhost:4000",
       "sameAs" : null
     }
   </script>
@@ -99,7 +99,7 @@
 <!-- end SEO -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Apache ServiceComb Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Apache ServiceComb Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -110,7 +110,7 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
-<script src="/assets/vendor/prism/prism.js"></script>
+<script src="http://localhost:4000/assets/vendor/prism/prism.js"></script>
 
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -122,8 +122,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="/assets/vendor/prism/prism.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/vendor/prism/prism.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -146,7 +146,7 @@
 
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 <link href="https://fonts.cat.net/css?family=Roboto:400,500,700|Source+Code+Pro" rel="stylesheet">
-<script src="/assets/js/custom.js"></script>
+<script src="http://localhost:4000/assets/js/custom.js"></script>
 <!-- end custom head snippets -->
 
   </head>
@@ -161,7 +161,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
 	      
-          <a class="site-title active" href="/"><img src="https://www.apache.org/img/servicecomb.png"></a>
+          <a class="site-title active" href="http://localhost:4000/"><img src="https://www.apache.org/img/servicecomb.png"></a>
 	      
         <ul class="visible-links">
           
@@ -170,7 +170,7 @@
               
               
               
-                <a href="/docs/quick-start/">Quick Start</a>
+                <a href="http://localhost:4000/docs/quick-start/">Quick Start</a>
               
             </li>
           
@@ -179,7 +179,7 @@
               
               
               
-                <a href="/users/">Users</a>
+                <a href="http://localhost:4000/users/">Users</a>
               
             </li>
           
@@ -188,7 +188,7 @@
               
               
               
-                <a href="/developers/">Developers</a>
+                <a href="http://localhost:4000/developers/">Developers</a>
               
             </li>
           
@@ -197,7 +197,7 @@
               
               
               
-                <a href="/year-archive/">Blogs</a>
+                <a href="http://localhost:4000/year-archive/">Blogs</a>
               
             </li>
           
@@ -206,7 +206,7 @@
               
               
               
-                <a href="/faqs/">FAQ</a>
+                <a href="http://localhost:4000/faqs/">FAQ</a>
               
             </li>
           
@@ -215,7 +215,7 @@
               
               
               
-                <a href="/release/">Downloads</a>
+                <a href="http://localhost:4000/release/">Downloads</a>
               
             </li>
           
@@ -370,7 +370,7 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>　　<a href="/docs/company-on-kubernetes/">Last article</a> describes how to quickly deploy the Company  demo on K8S. This article will continue to demonstrate the benefits of micro-service architecture, use auto-scale of K8S  in Company to achieve on-demand fine-grained resources.</p>
+        <p>　　<a href="http://localhost:4000/docs/company-on-kubernetes/">Last article</a> describes how to quickly deploy the Company  demo on K8S. This article will continue to demonstrate the benefits of micro-service architecture, use auto-scale of K8S  in Company to achieve on-demand fine-grained resources.</p>
 
 <h2 id="prepare">Prepare</h2>
 
@@ -380,100 +380,92 @@
 
 <p>Get one-click installing scripts in the <a href="https://github.com/zenlinTechnofreak/LinuxCon-Beijing-WorkShop/tree/autoscal/kubernetes/heapster/deploy">author’s repo</a>，update value of api-server as following and run kube.sh to start,</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>vi LinuxCon-Beijing-WorkShop/kubernetes/heapster/deploy/kube-config/influxdb/heapster.yaml
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi LinuxCon-Beijing-WorkShop/kubernetes/heapster/deploy/kube-config/influxdb/heapster.yaml
+</code></pre></div></div>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">spec</span><span class="pi">:</span>
-  <span class="s">replicas</span><span class="pi">:</span> <span class="s">1</span>
-  <span class="s">template</span><span class="pi">:</span>
-    <span class="s">metadata</span><span class="pi">:</span>
-      <span class="s">labels</span><span class="pi">:</span>
-        <span class="s">task</span><span class="pi">:</span> <span class="s">monitoring</span>
-        <span class="s">k8s-app</span><span class="pi">:</span> <span class="s">heapster</span>
-    <span class="s">spec</span><span class="pi">:</span>
-      <span class="s">serviceAccountName</span><span class="pi">:</span> <span class="s">heapster</span>
-      <span class="s">containers</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s">heapster</span>
-        <span class="s">image</span><span class="pi">:</span> <span class="s">gcr.io/google_containers/heapster-amd64:v1.4.1</span>
-        <span class="s">imagePullPolicy</span><span class="pi">:</span> <span class="s">IfNotPresent</span>
-        <span class="s">command</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">spec</span><span class="pi">:</span>
+  <span class="na">replicas</span><span class="pi">:</span> <span class="s">1</span>
+  <span class="na">template</span><span class="pi">:</span>
+    <span class="na">metadata</span><span class="pi">:</span>
+      <span class="na">labels</span><span class="pi">:</span>
+        <span class="na">task</span><span class="pi">:</span> <span class="s">monitoring</span>
+        <span class="na">k8s-app</span><span class="pi">:</span> <span class="s">heapster</span>
+    <span class="na">spec</span><span class="pi">:</span>
+      <span class="na">serviceAccountName</span><span class="pi">:</span> <span class="s">heapster</span>
+      <span class="na">containers</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">heapster</span>
+        <span class="na">image</span><span class="pi">:</span> <span class="s">gcr.io/google_containers/heapster-amd64:v1.4.1</span>
+        <span class="na">imagePullPolicy</span><span class="pi">:</span> <span class="s">IfNotPresent</span>
+        <span class="na">command</span><span class="pi">:</span>
         <span class="pi">-</span> <span class="s">/heapster</span>
 <span class="c1">#use 'kubernetes' directly if installed inside the cluster</span>
         <span class="pi">-</span> <span class="s">--source=kubernetes</span>
 <span class="c1">#use the practical api-server address if installed outside the cluster</span>
 <span class="c1">#        - --source=kubernetes:http://10.229.43.65:6443?inClusterConfig=false</span>
          <span class="pi">-</span> <span class="s">--sink=influxdb:http://monitoring-influxdb:8086</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="start-company-demo">Start Company Demo</h3>
 
 <p>Download Company source code, restricted resources, creating auto-scaller,</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/ServiceComb/ServiceComb-Company-WorkShop.git
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/ServiceComb/ServiceComb-Company-WorkShop.git
 
 <span class="nb">cd </span>LinuxCon-Beijing-WorkShop/kubernetes/
 
 bash start-autoscale.sh 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>In Company’s deployment script, filed of resources is added to limit  200 milli-cores to each pod(1000 milli-cores equal to 1 core),</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code>    <span class="s">resources</span><span class="pi">:</span>
-      <span class="s">limits</span><span class="pi">:</span>
-        <span class="s">cpu</span><span class="pi">:</span> <span class="s">200m</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="na">resources</span><span class="pi">:</span>
+      <span class="na">limits</span><span class="pi">:</span>
+        <span class="na">cpu</span><span class="pi">:</span> <span class="s">200m</span>
+</code></pre></div></div>
 <p>In script start-autoscale.sh, each command create a Horizontal Pod Autoscaler that maintains between 1 and 10 replicas of the Pods controlled by its deployment created. HPA will increase and decrease the number of replicas (via the deployment) to maintain an average CPU utilization across all Pods of 50%(this means average CPU usage of 100 milli-cores),</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="c"># Create Horizontal Pod Autoscaler</span>
-kubectl autoscale deployment zipkin --cpu-percent<span class="o">=</span>50 --min<span class="o">=</span>1 --max<span class="o">=</span>10
-kubectl autoscale deployment company-bulletin-board --cpu-percent<span class="o">=</span>50 --min<span class="o">=</span>1 --max<span class="o">=</span>10
-kubectl autoscale deployment company-worker --cpu-percent<span class="o">=</span>50 --min<span class="o">=</span>1 --max<span class="o">=</span>10
-kubectl autoscale deployment company-doorman --cpu-percent<span class="o">=</span>50 --min<span class="o">=</span>1 --max<span class="o">=</span>10
-kubectl autoscale deployment company-manager --cpu-percent<span class="o">=</span>50 --min<span class="o">=</span>1 --max<span class="o">=</span>10
-kubectl autoscale deployment company-beekeeper --cpu-percent<span class="o">=</span>50 --min<span class="o">=</span>1 --max<span class="o">=</span>10
-</code></pre>
-</div>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create Horizontal Pod Autoscaler</span>
+kubectl autoscale deployment zipkin <span class="nt">--cpu-percent</span><span class="o">=</span>50 <span class="nt">--min</span><span class="o">=</span>1 <span class="nt">--max</span><span class="o">=</span>10
+kubectl autoscale deployment company-bulletin-board <span class="nt">--cpu-percent</span><span class="o">=</span>50 <span class="nt">--min</span><span class="o">=</span>1 <span class="nt">--max</span><span class="o">=</span>10
+kubectl autoscale deployment company-worker <span class="nt">--cpu-percent</span><span class="o">=</span>50 <span class="nt">--min</span><span class="o">=</span>1 <span class="nt">--max</span><span class="o">=</span>10
+kubectl autoscale deployment company-doorman <span class="nt">--cpu-percent</span><span class="o">=</span>50 <span class="nt">--min</span><span class="o">=</span>1 <span class="nt">--max</span><span class="o">=</span>10
+kubectl autoscale deployment company-manager <span class="nt">--cpu-percent</span><span class="o">=</span>50 <span class="nt">--min</span><span class="o">=</span>1 <span class="nt">--max</span><span class="o">=</span>10
+kubectl autoscale deployment company-beekeeper <span class="nt">--cpu-percent</span><span class="o">=</span>50 <span class="nt">--min</span><span class="o">=</span>1 <span class="nt">--max</span><span class="o">=</span>10
+</code></pre></div></div>
 
 <p>HPA can be created after running start-autoscale.sh, get HPA status by the following command,</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code> kubectl get hpa
-</code></pre>
-</div>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code> kubectl get hpa
+</code></pre></div></div>
 
 <h3 id="start-pressure-testing">Start Pressure Testing</h3>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="nb">export</span> <span class="nv">$HOST</span><span class="o">=</span>&lt;heapster-ip&gt;:&lt;heapster-port&gt;
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export</span> <span class="nv">$HOST</span><span class="o">=</span>&lt;heapster-ip&gt;:&lt;heapster-port&gt;
 bash LinuxCon-Beijing-WorkShop/kubernetes/stress-test.sh
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>The script enable a dead loop, request to Company to calculate fibonacci number 200 times in each second, causing pressure on Company,</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="nv">FIBONA_NUM</span><span class="o">=</span><span class="sb">`</span>curl -s -H <span class="s2">"Authorization: </span><span class="nv">$Authorization</span><span class="s2">"</span> -XGET <span class="s2">"http://</span><span class="nv">$HOST</span><span class="s2">/worker/fibonacci/term?n=6"</span><span class="sb">`</span>
-</code></pre>
-</div>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">FIBONA_NUM</span><span class="o">=</span><span class="sb">`</span>curl <span class="nt">-s</span> <span class="nt">-H</span> <span class="s2">"Authorization: </span><span class="nv">$Authorization</span><span class="s2">"</span> <span class="nt">-XGET</span> <span class="s2">"http://</span><span class="nv">$HOST</span><span class="s2">/worker/fibonacci/term?n=6"</span><span class="sb">`</span>
+</code></pre></div></div>
 
 <h2 id="testing-result">Testing Result</h2>
 
 <p>Following datas gets from  HPA and Grafana,</p>
 
-<p class="figure-caption"><img src="/assets/images/company-autoscale-1.png" alt="Fig 1" class="align-center" /> 
+<p class="figure-caption"><img src="http://localhost:4000/assets/images/company-autoscale-1.png" alt="Fig 1" class="align-center" /> 
 Fig 1    HPA Data of Start-up Period</p>
 
-<p class="figure-caption"><img src="/assets/images/company-autoscale-2.png" alt="Fig 2" class="align-center" />
+<p class="figure-caption"><img src="http://localhost:4000/assets/images/company-autoscale-2.png" alt="Fig 2" class="align-center" />
 Fig 2    Granfana Data of Start-up Period</p>
 
-<p class="figure-caption"><img src="/assets/images/company-autoscale-3.png" alt="Fig 3" class="align-center" />
+<p class="figure-caption"><img src="http://localhost:4000/assets/images/company-autoscale-3.png" alt="Fig 3" class="align-center" />
 Fig 3    HPA  Data of middle Period</p>
 
-<p class="figure-caption"><img src="/assets/images/company-autoscale-4.png" alt="Fig 4" class="align-center" />
+<p class="figure-caption"><img src="http://localhost:4000/assets/images/company-autoscale-4.png" alt="Fig 4" class="align-center" />
 Fig 4    Granfana Data of The End</p>
 
-<p class="figure-caption"><img src="/assets/images/company-autoscale-5.png" alt="Fig 5" class="align-center" />
+<p class="figure-caption"><img src="http://localhost:4000/assets/images/company-autoscale-5.png" alt="Fig 5" class="align-center" />
 Fig 5    HPA Data of The End</p>
 
 <p><strong>Analyze the data to get the results,</strong></p>
@@ -524,11 +516,11 @@ Fig 5    HPA Data of The End</p>
     
       
       
-      <a href="/tags/#autoscale" class="page__taxonomy-item" rel="tag">autoscale</a><span class="sep">, </span>
+      <a href="http://localhost:4000/tags/#autoscale" class="page__taxonomy-item" rel="tag">autoscale</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#kubernetes" class="page__taxonomy-item" rel="tag">kubernetes</a>
+      <a href="http://localhost:4000/tags/#kubernetes" class="page__taxonomy-item" rel="tag">kubernetes</a>
     
     </span>
   </p>
@@ -551,24 +543,24 @@ Fig 5    HPA Data of The End</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=ServiceComb&text=On-demand Resource Control for Micro-serviced Company by Autoscale /docs/autoscale-on-company/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=ServiceComb&text=On-demand Resource Control for Micro-serviced Company by Autoscale http://localhost:4000/docs/autoscale-on-company/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=/docs/autoscale-on-company/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/docs/autoscale-on-company/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=/docs/autoscale-on-company/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=http://localhost:4000/docs/autoscale-on-company/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=/docs/autoscale-on-company/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/docs/autoscale-on-company/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/cn/docs/company-on-kubernetes/" class="pagination--pager" title="在kubernetes上一键式部署company
+      <a href="http://localhost:4000/cn/docs/company-on-kubernetes/" class="pagination--pager" title="在kubernetes上一键式部署company
 ">Previous</a>
     
     
-      <a href="/cn/docs/autoscale-on-company/" class="pagination--pager" title="微服务化后的按需精细化资源控制
+      <a href="http://localhost:4000/cn/docs/autoscale-on-company/" class="pagination--pager" title="微服务化后的按需精细化资源控制
 ">Next</a>
     
   </nav>
@@ -652,69 +644,11 @@ Fig 5    HPA Data of The End</p>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/cn/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+        <a href="http://localhost:4000/cn/docs/Apache-ServiceComb-Meetup-2018-Shanghai-Report/" rel="permalink">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </a>
       
     </h2>
-    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</p>
-    
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
-
-
-
-
-  1 minute read
-
-</p>
-    
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</a>
-      
-    </h2>
-    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
-</p>
-    
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
-
-
-
-
-  1 minute read
-
-</p>
-    
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/cn/docs/Apache-ServiceComb-Meetup-2018-Shanghai/" rel="permalink">Apache ServiceComb (incubating) Meetup -上海 2018.10.12
-</a>
-      
-    </h2>
-    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb (incubating) Meetup
+    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </p>
     
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -739,11 +673,11 @@ Fig 5    HPA Data of The End</p>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/docs/Apache-ServiceComb-Meetup-2018-Shanghai/" rel="permalink">Apache ServiceComb (incubating) Meetup -Shanghai 2018.10.12
+        <a href="http://localhost:4000/docs/Apache-ServiceComb-Meetup-2018-Shanghai-Report/" rel="permalink">Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)
 </a>
       
     </h2>
-    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb (incubating) Meetup
+    <p class="archive__item-excerpt" itemprop="description">Apache ServiceComb Meetup Report (PPT)
 </p>
     
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -751,7 +685,65 @@ Fig 5    HPA Data of The End</p>
 
 
 
-  4 minute read
+  2 minute read
+
+</p>
+    
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/cn/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</a>
+      
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</p>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+
+</p>
+    
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/docs/osi-microservices/" rel="permalink">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</a>
+      
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description">OpenSource India Summit: Hands-on Apache ServiceComb(Incubating) MicroServices Workshop
+</p>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
 
 </p>
     
@@ -824,7 +816,7 @@ Fig 5    HPA Data of The End</p>
             <a href="https://twitter.com/ServiceComb" target="_blank"><span class="twitter">Twitter</span></a>
         </li>
         <li>
-            <a href="/feed.xml" target="_blank"><span class="rss">Feed</span></a>
+            <a href="http://localhost:4000/feed.xml" target="_blank"><span class="rss">Feed</span></a>
         </li>
       </ul>
     </div>
@@ -838,7 +830,7 @@ Fig 5    HPA Data of The End</p>
       </footer>
     </div>
 
-    <script src="/assets/js/main.min.js"></script>
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
 
 
 

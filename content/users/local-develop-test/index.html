@@ -36,8 +36,8 @@
 <meta property="og:title" content="Local Development and Test">
 
 
-  <link rel="canonical" href="http://github.com/pages/apache/incubator-servicecomb-website/users/local-develop-test/">
-  <meta property="og:url" content="http://github.com/pages/apache/incubator-servicecomb-website/users/local-develop-test/">
+  <link rel="canonical" href="http://localhost:4000/users/local-develop-test/">
+  <meta property="og:url" content="http://localhost:4000/users/local-develop-test/">
 
 
 
@@ -48,7 +48,7 @@
   <meta name="twitter:site" content="@ServiceComb">
   <meta name="twitter:title" content="Local Development and Test">
   <meta name="twitter:description" content="Local Development and Test">
-  <meta name="twitter:url" content="">
+  <meta name="twitter:url" content="http://localhost:4000/users/local-develop-test/">
 
   
     <meta name="twitter:card" content="summary">
@@ -79,7 +79,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "Apache ServiceComb",
-      "url" : "http://github.com/pages/apache/incubator-servicecomb-website",
+      "url" : "http://localhost:4000",
       "sameAs" : null
     }
   </script>
@@ -94,7 +94,7 @@
 <!-- end SEO -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Apache ServiceComb Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Apache ServiceComb Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -105,7 +105,7 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
-<script src="/assets/vendor/prism/prism.js"></script>
+<script src="http://localhost:4000/assets/vendor/prism/prism.js"></script>
 
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -117,8 +117,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="/assets/vendor/prism/prism.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/vendor/prism/prism.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -141,7 +141,7 @@
 
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 <link href="https://fonts.cat.net/css?family=Roboto:400,500,700|Source+Code+Pro" rel="stylesheet">
-<script src="/assets/js/custom.js"></script>
+<script src="http://localhost:4000/assets/js/custom.js"></script>
 <!-- end custom head snippets -->
 
   </head>
@@ -156,7 +156,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
 	      
-          <a class="site-title active" href="/"><img src="https://www.apache.org/img/servicecomb.png"></a>
+          <a class="site-title active" href="http://localhost:4000/"><img src="https://www.apache.org/img/servicecomb.png"></a>
 	      
         <ul class="visible-links">
           
@@ -165,7 +165,7 @@
               
               
               
-                <a href="/docs/quick-start/">Quick Start</a>
+                <a href="http://localhost:4000/docs/quick-start/">Quick Start</a>
               
             </li>
           
@@ -174,7 +174,7 @@
               
               
               
-                <a class="active" href="/users/">Users</a>
+                <a class="active" href="http://localhost:4000/users/">Users</a>
               
             </li>
           
@@ -183,7 +183,7 @@
               
               
               
-                <a href="/developers/">Developers</a>
+                <a href="http://localhost:4000/developers/">Developers</a>
               
             </li>
           
@@ -192,7 +192,7 @@
               
               
               
-                <a href="/year-archive/">Blogs</a>
+                <a href="http://localhost:4000/year-archive/">Blogs</a>
               
             </li>
           
@@ -201,7 +201,7 @@
               
               
               
-                <a href="/faqs/">FAQ</a>
+                <a href="http://localhost:4000/faqs/">FAQ</a>
               
             </li>
           
@@ -210,7 +210,7 @@
               
               
               
-                <a href="/release/">Downloads</a>
+                <a href="http://localhost:4000/release/">Downloads</a>
               
             </li>
           
@@ -380,12 +380,11 @@
   <li>
     <p><strong>Step 2</strong> After local service center is started, configure the service center address in the microservice.yaml file that stores SDK configuration information, as shown in the following example:</p>
 
-    <div class="language-yaml highlighter-rouge"><pre class="highlight"><code> <span class="s">servicecomb</span><span class="pi">:</span>
-   <span class="s">service</span><span class="pi">:</span>
-     <span class="s">registry</span><span class="pi">:</span>
-       <span class="s">address</span><span class="pi">:</span> <span class="s">http://127.0.0.1:30100</span> <span class="c1">#Indicates the service center address and port number</span>
-</code></pre>
-    </div>
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="na">servicecomb</span><span class="pi">:</span>
+   <span class="na">service</span><span class="pi">:</span>
+     <span class="na">registry</span><span class="pi">:</span>
+       <span class="na">address</span><span class="pi">:</span> <span class="s">http://127.0.0.1:30100</span> <span class="c1">#Indicates the service center address and port number</span>
+</code></pre></div>    </div>
   </li>
   <li>
     <p><strong>Step 3</strong> Develop service providers and consumers enable the microservice for local tests.</p>
@@ -398,29 +397,27 @@
   <li>
     <p><strong>Step 1</strong> Create the registry.yaml file for Local ServiceCenter</p>
 
-    <div class="language-yaml highlighter-rouge"><pre class="highlight"><code> <span class="s">springmvctest</span><span class="pi">:</span>
-   <span class="pi">-</span> <span class="s">id</span><span class="pi">:</span> <span class="s2">"</span><span class="s">001"</span>
-     <span class="s">version</span><span class="pi">:</span> <span class="s2">"</span><span class="s">1.0"</span>
-     <span class="s">appid</span><span class="pi">:</span> <span class="s">myapp</span> <span class="c1">#Commissioning service ID</span>
-     <span class="s">instances</span><span class="pi">:</span> 
-       <span class="s">endpoints</span><span class="pi">:</span>
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="na">springmvctest</span><span class="pi">:</span>
+   <span class="pi">-</span> <span class="na">id</span><span class="pi">:</span> <span class="s2">"</span><span class="s">001"</span>
+     <span class="na">version</span><span class="pi">:</span> <span class="s2">"</span><span class="s">1.0"</span>
+     <span class="na">appid</span><span class="pi">:</span> <span class="s">myapp</span> <span class="c1">#Commissioning service ID</span>
+     <span class="na">instances</span><span class="pi">:</span> 
+       <span class="na">endpoints</span><span class="pi">:</span>
          <span class="s">rest://127.0.0.1:8080</span>
-</code></pre>
-    </div>
+</code></pre></div>    </div>
 
     <p>NOTE: The mock mechanism needs an API definition on its own. Currently, only local commissioning for service consumers is supported.</p>
   </li>
   <li>
     <p><strong>Step 2</strong> Add the following code to the end of the Main function for service consumers.</p>
 
-    <div class="language-java highlighter-rouge"><pre class="highlight"><code> <span class="kd">public</span> <span class="kd">class</span> <span class="nc">xxxClient</span> <span class="o">{</span>
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">public</span> <span class="kd">class</span> <span class="nc">xxxClient</span> <span class="o">{</span>
  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
    <span class="n">System</span><span class="o">.</span><span class="na">setProperty</span><span class="o">(</span><span class="s">"local.registry.file"</span><span class="o">,</span> <span class="s">"/path/registry.yaml"</span><span class="o">);</span>
    <span class="c1">//your code</span>
    <span class="n">System</span><span class="o">.</span><span class="na">clearProperty</span><span class="o">(</span><span class="s">"local.registry.file"</span><span class="o">);</span>
  <span class="o">}</span>
-</code></pre>
-    </div>
+</code></pre></div>    </div>
 
     <p>NOTE: Set the second parameter of setProperty to the absolute path of registry.yaml file in the disk. The path separator depends on the system it is in.</p>
   </li>
@@ -513,7 +510,7 @@
             <a href="https://twitter.com/ServiceComb" target="_blank"><span class="twitter">Twitter</span></a>
         </li>
         <li>
-            <a href="/feed.xml" target="_blank"><span class="rss">Feed</span></a>
+            <a href="http://localhost:4000/feed.xml" target="_blank"><span class="rss">Feed</span></a>
         </li>
       </ul>
     </div>
@@ -527,7 +524,7 @@
       </footer>
     </div>
 
-    <script src="/assets/js/main.min.js"></script>
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
 
 
 

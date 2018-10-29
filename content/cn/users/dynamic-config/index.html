@@ -36,8 +36,8 @@
 <meta property="og:title" content="动态配置">
 
 
-  <link rel="canonical" href="http://github.com/pages/apache/incubator-servicecomb-website/cn/users/dynamic-config/">
-  <meta property="og:url" content="http://github.com/pages/apache/incubator-servicecomb-website/cn/users/dynamic-config/">
+  <link rel="canonical" href="http://localhost:4000/cn/users/dynamic-config/">
+  <meta property="og:url" content="http://localhost:4000/cn/users/dynamic-config/">
 
 
 
@@ -48,7 +48,7 @@
   <meta name="twitter:site" content="@ServiceComb">
   <meta name="twitter:title" content="动态配置">
   <meta name="twitter:description" content="动态配置">
-  <meta name="twitter:url" content="">
+  <meta name="twitter:url" content="http://localhost:4000/cn/users/dynamic-config/">
 
   
     <meta name="twitter:card" content="summary">
@@ -79,7 +79,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "Apache ServiceComb",
-      "url" : "http://github.com/pages/apache/incubator-servicecomb-website",
+      "url" : "http://localhost:4000",
       "sameAs" : null
     }
   </script>
@@ -94,7 +94,7 @@
 <!-- end SEO -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Apache ServiceComb Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Apache ServiceComb Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -105,7 +105,7 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
-<script src="/assets/vendor/prism/prism.js"></script>
+<script src="http://localhost:4000/assets/vendor/prism/prism.js"></script>
 
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -117,8 +117,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="/assets/vendor/prism/prism.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/vendor/prism/prism.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -141,7 +141,7 @@
 
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 <link href="https://fonts.cat.net/css?family=Roboto:400,500,700|Source+Code+Pro" rel="stylesheet">
-<script src="/assets/js/custom.js"></script>
+<script src="http://localhost:4000/assets/js/custom.js"></script>
 <!-- end custom head snippets -->
 
   </head>
@@ -156,7 +156,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
 	      
-          <a class="site-title active" href="/cn"><img src="https://www.apache.org/img/servicecomb.png"></a>
+          <a class="site-title active" href="http://localhost:4000/cn"><img src="https://www.apache.org/img/servicecomb.png"></a>
 	      
         <ul class="visible-links">
           
@@ -165,7 +165,7 @@
               
               
               
-                <a href="/cn/docs/quick-start/">快速入门</a>
+                <a href="http://localhost:4000/cn/docs/quick-start/">快速入门</a>
               
             </li>
           
@@ -174,7 +174,7 @@
               
               
               
-                <a class="active" href="/cn/users/">用户手册</a>
+                <a class="active" href="http://localhost:4000/cn/users/">用户手册</a>
               
             </li>
           
@@ -183,7 +183,7 @@
               
               
               
-                <a href="/cn/developers/">开发者手册</a>
+                <a href="http://localhost:4000/cn/developers/">开发者手册</a>
               
             </li>
           
@@ -192,7 +192,7 @@
               
               
               
-                <a href="/cn/year-archive/">博文</a>
+                <a href="http://localhost:4000/cn/year-archive/">博文</a>
               
             </li>
           
@@ -201,7 +201,7 @@
               
               
               
-                <a href="/cn/faqs/">常见问题</a>
+                <a href="http://localhost:4000/cn/faqs/">常见问题</a>
               
             </li>
           
@@ -210,7 +210,7 @@
               
               
               
-                <a href="/cn/release/">下载</a>
+                <a href="http://localhost:4000/cn/release/">下载</a>
               
             </li>
           
@@ -371,10 +371,9 @@
 
 <p>通过镜像方式启动Apollo配置中心请参考<a href="https://github.com/ctripcorp/apollo/wiki/Apollo-Quick-Start-Docker%E9%83%A8%E7%BD%B2">官方文档</a>，或者执行下面两个指令即可：</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>   git clone https://github.com/lijasonvip/apollo-image-for-servicecomb.git
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   git clone https://github.com/lijasonvip/apollo-image-for-servicecomb.git
    <span class="nb">cd </span>apollo-image-for-servicecomb <span class="o">&amp;&amp;</span> docker-compose up
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>等待出现 <code class="highlighter-rouge">Portal started. You can visit http://localhost:8070 now!</code> 后表示系统启动完成（启动时间基于机器性能可能需要1-3分钟），可以在浏览器中访问<code class="highlighter-rouge">http://localhost:8070</code>进入配置中心页面。 <code class="highlighter-rouge">docker-compose</code>安装请参考<a href="https://docs.docker.com/compose/install/">文档</a>。</p>
 
 <h3 id="通过apollo界面配置应用获取token">通过Apollo界面配置应用获取TOKEN</h3>
@@ -416,25 +415,23 @@
 
 <h3 id="在应用中添加依赖">在应用中添加依赖</h3>
 
-<div class="language-xml highlighter-rouge"><pre class="highlight"><code>    <span class="nt">&lt;dependency&gt;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;dependency&gt;</span>
           <span class="nt">&lt;groupId&gt;</span>org.apache.servicecomb<span class="nt">&lt;/groupId&gt;</span>
           <span class="nt">&lt;artifactId&gt;</span>config-apollo<span class="nt">&lt;/artifactId&gt;</span>
     <span class="nt">&lt;/dependency&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 <h3 id="添加配置项">添加配置项</h3>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code>   <span class="s">apollo</span><span class="pi">:</span>
-     <span class="s">config</span><span class="pi">:</span>
-       <span class="s">serverUri</span><span class="pi">:</span> <span class="s">http://127.0.0.1:8070</span>
-       <span class="s">serviceName</span><span class="pi">:</span> <span class="s">SampleApp</span>
-       <span class="s">env</span><span class="pi">:</span> <span class="s">DEV</span>
-       <span class="s">clusters</span><span class="pi">:</span> <span class="s">default</span>
-       <span class="s">namespace</span><span class="pi">:</span> <span class="s">application</span>
-       <span class="s">token</span><span class="pi">:</span> <span class="s">testtoken</span>
-       <span class="s">refreshInterval</span><span class="pi">:</span> <span class="s">10</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="na">apollo</span><span class="pi">:</span>
+     <span class="na">config</span><span class="pi">:</span>
+       <span class="na">serverUri</span><span class="pi">:</span> <span class="s">http://127.0.0.1:8070</span>
+       <span class="na">serviceName</span><span class="pi">:</span> <span class="s">SampleApp</span>
+       <span class="na">env</span><span class="pi">:</span> <span class="s">DEV</span>
+       <span class="na">clusters</span><span class="pi">:</span> <span class="s">default</span>
+       <span class="na">namespace</span><span class="pi">:</span> <span class="s">application</span>
+       <span class="na">token</span><span class="pi">:</span> <span class="s">testtoken</span>
+       <span class="na">refreshInterval</span><span class="pi">:</span> <span class="s">10</span>
+</code></pre></div></div>
 <p>​	<code class="highlighter-rouge">apollo.config</code>下的配置项是用户创建的应用参数，包括服务地址，用户名，集群，namespace，token等参数。这些参数可以在配置中心页面项目信息栏中查到。需要注意的是<code class="highlighter-rouge">refreshInterval: 10</code>表示应用会每隔10秒去配置中心查询一次最新的配置信息，不配置此项默认刷新周期为30秒。
   <code class="highlighter-rouge">serviceName</code>对应Apollo中的第三发应用ID: <code class="highlighter-rouge">AppId</code>.</p>
 
@@ -444,7 +441,7 @@
 
 <p>​	代码中可以使用<code class="highlighter-rouge">DynamicPropertyFactory.getInstance().getProperty()</code>方法来获取具体的配置项值，<code class="highlighter-rouge">getProperty</code>方法可以根据配置项具体的类型来灵活使用，比如<code class="highlighter-rouge">getIntProperty()</code>,<code class="highlighter-rouge">getStringProperty()</code>等。</p>
 
-<div class="language-java highlighter-rouge"><pre class="highlight"><code>   <span class="kd">public</span> <span class="kd">class</span> <span class="nc">XXX</span> <span class="o">{</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="kd">public</span> <span class="kd">class</span> <span class="nc">XXX</span> <span class="o">{</span>
       <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
         <span class="n">Log4jUtils</span><span class="o">.</span><span class="na">init</span><span class="o">();</span>
         <span class="n">BeanUtils</span><span class="o">.</span><span class="na">init</span><span class="o">();</span>
@@ -456,8 +453,7 @@
         <span class="o">}</span>
       <span class="o">}</span>
     <span class="o">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>​	Apollo配置中心修改配置项并发布后，经过一个刷新周期后就会打印出最新的<code class="highlighter-rouge">timeout</code>值。</p>
 
 
@@ -545,7 +541,7 @@
             <a href="https://twitter.com/ServiceComb" target="_blank"><span class="twitter">Twitter</span></a>
         </li>
         <li>
-            <a href="/feed.xml" target="_blank"><span class="rss">Feed</span></a>
+            <a href="http://localhost:4000/feed.xml" target="_blank"><span class="rss">Feed</span></a>
         </li>
       </ul>
     </div>
@@ -559,7 +555,7 @@
       </footer>
     </div>
 
-    <script src="/assets/js/main.min.js"></script>
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
 
 
 
