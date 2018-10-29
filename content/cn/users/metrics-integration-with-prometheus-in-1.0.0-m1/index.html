@@ -19,12 +19,12 @@
 
 
 
-<title>1.0.0-m1版本中的监控如何集成普罗米修斯 - Apache ServiceComb</title>
+<title>1.0.0-m1版本中的监控如何集成prometheus - Apache ServiceComb</title>
 
 
 
 
-<meta name="description" content="1.0.0-m1版本中的监控如何集成普罗米修斯">
+<meta name="description" content="1.0.0-m1版本中的监控如何集成prometheus">
 
 
 
@@ -33,7 +33,7 @@
 
 <meta property="og:locale" content="cn">
 <meta property="og:site_name" content="Apache ServiceComb">
-<meta property="og:title" content="1.0.0-m1版本中的监控如何集成普罗米修斯">
+<meta property="og:title" content="1.0.0-m1版本中的监控如何集成prometheus">
 
 
   <link rel="canonical" href="http://localhost:4000/cn/users/metrics-integration-with-prometheus-in-1.0.0-m1/">
@@ -41,13 +41,13 @@
 
 
 
-  <meta property="og:description" content="1.0.0-m1版本中的监控如何集成普罗米修斯">
+  <meta property="og:description" content="1.0.0-m1版本中的监控如何集成prometheus">
 
 
 
   <meta name="twitter:site" content="@ServiceComb">
-  <meta name="twitter:title" content="1.0.0-m1版本中的监控如何集成普罗米修斯">
-  <meta name="twitter:description" content="1.0.0-m1版本中的监控如何集成普罗米修斯">
+  <meta name="twitter:title" content="1.0.0-m1版本中的监控如何集成prometheus">
+  <meta name="twitter:description" content="1.0.0-m1版本中的监控如何集成prometheus">
   <meta name="twitter:url" content="http://localhost:4000/cn/users/metrics-integration-with-prometheus-in-1.0.0-m1/">
 
   
@@ -326,8 +326,8 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="1.0.0-m1版本中的监控如何集成普罗米修斯">
-    <meta itemprop="description" content="1.0.0-m1版本中的监控如何集成普罗米修斯">
+    <meta itemprop="headline" content="1.0.0-m1版本中的监控如何集成prometheus">
+    <meta itemprop="description" content="1.0.0-m1版本中的监控如何集成prometheus">
     
     <meta itemprop="dateModified" content="January 02, 2018">
 
@@ -335,7 +335,7 @@
       
         
           <header>
-            <h1 class="page__title" itemprop="headline">1.0.0-m1版本中的监控如何集成普罗米修斯
+            <h1 class="page__title" itemprop="headline">1.0.0-m1版本中的监控如何集成prometheus
 </h1>
             
           </header>
@@ -366,7 +366,7 @@
 <p>微服务框架从0.5.0版本开始支持监控功能Metrics，1.0.0-m1版本正式发布，请通过查看用户手册和<a href="https://github.com/apache/incubator-servicecomb-java-chassis/releases">Release Note</a>获取更多信息，我们也会继续追加新特性新功能，欢迎订阅ServiceComb邮件列表(dev-subscribe@servicecomb.incubator.apache.org)参与讨论。</p>
 
 <h2 id="背景">背景</h2>
-<p><a href="http://www.prometheus.io/">普罗米修斯</a>是相似于Google Borgmon的一个开源监控系统，也是<a href="https://www.cncf.io/">CNCF</a>的成员之一，目前社区非常活跃，Java Chassis Metrics在1.0.0-m1中支持对接普罗米修斯，并进一步实现使用<a href="https://grafana.com/">Grafana</a>查询Metrics数据。</p>
+<p><a href="http://www.prometheus.io/">prometheus</a>是相似于Google Borgmon的一个开源监控系统，也是<a href="https://www.cncf.io/">CNCF</a>的成员之一，目前社区非常活跃，Java Chassis Metrics在1.0.0-m1中支持对接prometheus，并进一步实现使用<a href="https://grafana.com/">Grafana</a>查询Metrics数据。</p>
 
 <h2 id="对接原理">对接原理</h2>
 <p>由于Java Chassis由Java语言开发，我们使用<a href="https://github.com/prometheus/client_java">prometheus java client</a>中的Simple Client作为对接SDK，版本为0.1.0。<br />
@@ -389,7 +389,7 @@ Prometheus推荐Pull模式拉取Metrics数据，被监控微服务作为Producer
 <p>因此一旦集成Prometheus引入了metrics-prometheus依赖后，不再需要添加metrics-core的依赖。</p>
 
 <h2 id="如何配置">如何配置</h2>
-<p>开启对接普罗米修斯非常简单：</p>
+<p>开启对接prometheus非常简单：</p>
 <h3 id="全局配置">全局配置</h3>
 <p>microservice.yaml中有如下配置项：</p>
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">APPLICATION_ID</span><span class="pi">:</span> <span class="s">demo</span>
