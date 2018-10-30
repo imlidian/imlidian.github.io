@@ -1,5 +1,5 @@
 ---
-title: "Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT)"
+title: "Apache ServiceComb Meetup -Shanghai 2018.10.12 Report (PPT Download)"
 lang: cn
 ref: Apache-ServiceComb-Meetup-2018-Shanghai-Report
 permalink: /cn/docs/Apache-ServiceComb-Meetup-2018-Shanghai-Report/
@@ -15,7 +15,7 @@ redirect_from:
 
 **《Apache之道》**    
 
-[PDF下载](/assets/slides/20181012/EN/1_Apache_HuaweiConnect_Presentation_20181012.pdf)
+[PDF下载](/assets/slides/20181012/EN/1_The_Apache_Way.pdf)
 
 **Roman Shaposhnik, Justin Mclean, Craig Russell：** Apache软件基金会是全球最大的开源基金会，目前拥有300多个开源项目，涵盖大数据、云计算、服务器和Web框架、构建管理、内容管理、物联网等众多领域。三位来自Apache基金会的专家将详细介绍Apache基金会发展历程及现状，阐述Apache基金会的运作方式，解读Apache软件基金会的核心理念—Apache Way。同时分析作为一个Apache项目需要遵守的合规性规则及背后所蕴含的意义。并介绍Apache基金会孵化器的概况及项目流程，讨论Apache孵化项目如何发展社区并毕业成为顶级项目。  
 
@@ -72,7 +72,7 @@ redirect_from:
 
 ---
 
-关于Apache ServiceComb 项目**：
+**关于Apache ServiceComb 项目**：
 
 ServiceComb Apache软件基金会孵化项目的主体代码由华为云捐赠，致力于帮助企业轻松构建云原生应用及传统企业业务快速微服务化，通过系列解决方案帮助用户快速开发微服务的同时实现对这些微服务应用的高效运维管理。它具有完整的微服务生态栈，无厂商锁定，当前遵循Apache Way进行孵化，已拥有如消费者云、云EI、云安全、云核等华为业务之外的一批非华为商用用户，且社区和开发者也日趋多样化。
 
